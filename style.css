@@ -1,7 +1,44 @@
 @charset "utf-8";
 /* CSS Document */
 
-h1{
-    color: navy;
-    font-size: 40px
+.presentación {
+    background-color: #969696;
+    height: 300px;
+    width: 1627px;
+    padding
 }
+
+header h1 {
+    color: #000000;
+    font-size: 36px;
+    font-family: Nohemi;
+    padding: 50px 0px 0px 0px;
+}
+
+header h3 {
+    color: #000000;
+    font-size: 80px;
+    font-family: Nohemi;
+    padding: 50px 0px 0px 0px;
+}
+
+header h2 {
+    color: #000000;
+    font-size: 40px;
+    font-family: Archivo;
+    padding: 50px 0px 0px 0px;
+}
+
+.foto-cv {
+    width: 300px;
+    padding: 0;
+    margin: 2px 1000px 0px 1062px;
+    position: absolute;
+   
+
+
+
+
+}
+
+#sobre-mi ul {}
