@@ -3,51 +3,99 @@
 
 .presentación {
     background-color: #E6E6E6;
-    height: 400px;
+    height: 500px;
     width: 1627px;
-    padding:0px
-    }
-
-header h1 {
-    color: #D9703C;
-    font-size: 36px;
-    font-family: Nohemi;
-    font-style: italic;
-    font-weight: 400;
-    padding: 50px 0px 0px 50px;
+    padding: 0px
+        /* aca me costó definir la medida del rectangulo, me fijé las medidas de mi navegador pero nunca llegaba hacia los extremos*/
 }
 
 header h3 {
     color: #D9703C;
+    font-size: 36px;
+    font-family: Archivo, sans-serif;
+       font-style: italic;
+    font-weight: 300;
+    padding: 50px 0px 0px 50px;
+}
+
+
+header h1 {
+    color: #D9703C;
     font-size: 80px;
-    font-family: Nohemi;
+    font-family: Nohemi, sans-serif;
+    font-weight: 700;
+/* si elijo una tipografia en regular en este caso, con solo aplicarla en "font-family" lo pone en regular como predeterminado? o tambien tengo que aclararle en "font-weigth" el numero correspondiente a ese peso segun indica la tipografia?*/
+
     padding: 0px 0px 0px 50px;
-    
+
 }
 
 header h2 {
     color: #D9703C;
     font-size: 40px;
-    font-family: Archivo;
-    
-    
+    font-family: Archivo, sans-serif;
+    font-style: italic;
+    font-weight: 800;
     padding: 0px 0px 0px 50px;
 }
-.foto-cv{
+
+.foto-cv {
     padding: 50px 15px;
     float: right;
     padding: 50px 50px;
 }
-#edad-localidad ul{
+
+#edad-localidad1 li {
     color: #3342CC;
-    font: size 24px;
+    font-size: 24px;
+    font-family: Archivo, sans-serif;
+    font-weight: 0;
+    padding: 0px 50px;
+    display: inline;
 }
 
-ul{
-   list-style-type: none;
-   padding: 0px;
-   }
-
-   h4{
+/* esta parte es la que comenté en el index, que dudaba en como separar las etiquetas por el uso que queria darles, la primera linea en regular y la segunda el bold*/
+#edad-localidad2 li {
     color: #3342CC;
-   }
+    font-family: Nohemi, sans-serif;
+    font-size: 24px;
+    font-family: Archivo, sans-serif;
+    font-weight: 600;
+    padding: 0px 50px;
+    display: inline;
+}
+
+#sobre-mi h3 {
+    color: #D9703C;
+    font-size: 38px;
+    font-weight: 600;
+    font-family: Nohemi, sans-serif;
+    padding: 0px 50px;
+}
+
+#sobre-mi p {
+    /* Este parrafo me quedó largo en la visualización del servidor y no supe como resolverlo */
+    color: #3342CC;
+    text-align: left;
+    font-family: Archivo, sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    padding: 0px 50px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    font-family: Archivo, sans-serif;
+}
+
+/* Comentarios de mis primeros avances con CSS:
+Esto es lo que pude avanzar por ahora,por momentos me cuesta un poco saber que selector de etiqueta usar, lo hago un poco por intuición aunque en algunas partes dudo si está bien.
+Por otro lado, ¿que tanto podria separarse el diseño que hagamos de lo que es un "cv tradicional"?
+
+-¿Como se resuelven las interlineas? Probé con el padding pero me seguia quedando mal.
+
+-Si estoy diseñando en figma, ¿como hago para tomar la medida en px de la posicion de un objeto de mi mesa de trabajo? Lo hice medio a ojo, sospecho que debe haber una manera
+
+-Me gustaria trabajar en 2 columnas aunque no sé si es valido,no pude probar porque no lo vimos aún*/

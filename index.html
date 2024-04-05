@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <!--La tipografia Nohemi no se encuentra en google fonts, igualmente la agregué en la carpeta de "fonts" -->
 
 </head>
 
@@ -16,18 +17,24 @@
     <header>
         <div class='presentación'>
             <img src="img/romina-fondonaranja.jpg" class="foto-cv" alt="foto cv romina" width="260px" height="260">
-            <h1>Hola, yo soy</h1>
-            <h3>Romina Panzardo</h3>
+            <h3>Hola, yo soy</h3>
+            <h1>Romina Panzardo</h1>
             <h2>Diseñadora grafica jr</h2>
+            <ul id="edad-localidad1">
+                <li>Edad</li>
+                <li>Localidad</li>
+            </ul>
+            <ul id="edad-localidad2">
+                <li>23 años</li>
+                <li>Banfield,Buenos Aires</li>
+            </ul>
+            <!--aca dudo si esté bien la manera en que dividí la parte de los titulos y la informacion. No supe cual era la manera correcta de darle la propiedad en css por separado y que a su vez aparezcan inline. Lo que quise hacer es que "Edad y localidad" aparezcan en regular y la info en una siguiente linea abajo en Bold
+            
+            ¿en vez de hacer listas y <li>, podria utilizarlos directamente como <p> ? -->
+        </div>
 
     </header>
-    </div>
-    <div id="edad-localidad">
-        <ul>
-            <li>Edad: 23 años</li>
-            <li>Localidad: Banfield,Buenos Aires</li>
-        </ul>
-    </div>
+
 
     <div id="numeroymail">
         <ul>
@@ -36,7 +43,6 @@
             <li> <a target="_blank" href="https://www.linkedin.com/in/romina-panzardo"> Perfil de linkedin</a> </li>
             <li> <a target="_blank" href="https://www.behance.net/rominapanzardo"> Portfolio</a> </li>
         </ul>
-
 
     </div>
     <main>
@@ -104,20 +110,25 @@
         <section id:skills>
             <h3> Skills</h3>
             <ul>
-                <li>Español: Idioma nativo</li>
-                <li>Ingles: B2</li>
+                <li>Photoshop</li>
+                <li>Indesing</li>
+                <li>Ilustrator</li>
+                <li>Figma</li>
             </ul>
+            <!-- aca me falta agregar una seccion de skills o pasatiempos -->
         </section>
 
-        <!-- completar y agregar skills -->
+
 
     </main>
 
     <footer>
         <p id="parrafo-del-footer">Curriculum Vitae para Computación III</p>
+        <!--Es necesaria otra info en el footer? O es opcional? Se me ocurre dejar ahí la info de contacto-->
     </footer>
-
 
 </body>
 
 </html>
+<!--link de figma: le falta mucho, aun es un boceto y va a haber cambios pero por ahora intenté replicar el header en css lo mejor que pude
+https://www.figma.com/file/WK1WXK7ULTz1zqrW1Tc6Rn/cv-rominapanzardo?type=design&node-id=1%3A93&mode=dev&t=drp8cNpvRlzo4oGo-1 -->
