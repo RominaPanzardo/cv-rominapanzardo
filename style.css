@@ -45,7 +45,7 @@ header h2 {
     padding: 50px 50px;
 }
 
-#edad-localidad1 li {
+#edad-localidad-titulos p {
     color: #3342CC;
     font-size: 24px;
     font-family: Archivo, sans-serif;
@@ -55,7 +55,7 @@ header h2 {
 }
 
 /* esta parte es la que comenté en el index, que dudaba en como separar las etiquetas por el uso que queria darles, la primera linea en regular y la segunda el bold*/
-#edad-localidad2 li {
+#edad-localidad-datos p {
     color: #3342CC;
     font-family: Nohemi, sans-serif;
     font-size: 24px;
