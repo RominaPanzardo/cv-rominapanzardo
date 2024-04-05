@@ -2,43 +2,52 @@
 /* CSS Document */
 
 .presentación {
-    background-color: #969696;
-    height: 300px;
+    background-color: #E6E6E6;
+    height: 400px;
     width: 1627px;
-    padding
-}
+    padding:0px
+    }
 
 header h1 {
-    color: #000000;
+    color: #D9703C;
     font-size: 36px;
     font-family: Nohemi;
-    padding: 50px 0px 0px 0px;
+    font-style: italic;
+    font-weight: 400;
+    padding: 50px 0px 0px 50px;
 }
 
 header h3 {
-    color: #000000;
+    color: #D9703C;
     font-size: 80px;
     font-family: Nohemi;
-    padding: 50px 0px 0px 0px;
+    padding: 0px 0px 0px 50px;
+    
 }
 
 header h2 {
-    color: #000000;
+    color: #D9703C;
     font-size: 40px;
     font-family: Archivo;
-    padding: 50px 0px 0px 0px;
+    
+    
+    padding: 0px 0px 0px 50px;
+}
+.foto-cv{
+    padding: 50px 15px;
+    float: right;
+    padding: 50px 50px;
+}
+#edad-localidad ul{
+    color: #3342CC;
+    font: size 24px;
 }
 
-.foto-cv {
-    width: 300px;
-    padding: 0;
-    margin: 2px 1000px 0px 1062px;
-    position: absolute;
-   
+ul{
+   list-style-type: none;
+   padding: 0px;
+   }
 
-
-
-
-}
-
-#sobre-mi ul {}
+   h4{
+    color: #3342CC;
+   }
