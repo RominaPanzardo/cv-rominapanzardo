@@ -1,77 +1,78 @@
 @charset "utf-8";
+
 /* CSS Document */
-
-/*A partir de la clase del viernes pude sacarme varias dudas, todavia no tuve tiempo de ponerme a corregir*/
-.barra
-{
-background-color:#d9703c;
-height:115px;
-width:1920px;
-padding-left:156px;
-padding-right:104px;
-display:flex;
-flex-direction:row;
-justify-content:space-between;
-align-items:center;
-position:relative;
-}
-
-.logo-rp21
-{
-background-color:#ffffff;
-height:55px;
-width:85px;
-align-self:flex-start;
-left:156px;
-top:30px;
-position:absolute;
-padding:0px;
-}
-
-.presentación {
-    background-color: #ffffff;
+.barra {
+    background-color: #d9703c;
     height: 115px;
+    width: 100%;
+    padding-left: 156px;
+    padding-right: 104px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo-blanco.png {
+    height: 55px;
+    width: 85px;
+    padding:0px;
+    left: 156px;
+    top: 30px;
+    position: relative;
+    width: 100%;
+}
+
+.header {
+    background-color: #ffffff;
     width: 100%;
     padding: 0px
         /* aca me costó definir la medida del rectangulo, me fijé las medidas de mi navegador pero nunca llegaba hacia los extremos
     RTA: no está bueno utilizar medidas fijas a menos que se trate de elementos pequeños, acá podrías utilizar de ancho 100% para que ocupe el total del ancho de la pantalla, sea cual sea el tamaño de la pantalla en la que se ce, y además el alto que lo den los elementos internos, o sea los tamaños tipograficos + paddings + margins de los mismos*/
 }
 
+.emojisaludando {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
 header h3 {
-    color: #D9703C;
+    color: #000000;
     font-size: 36px;
     font-family: Archivo, sans-serif;
     font-style: italic;
-    /*indentado*/
     font-weight: 300;
+    line-height: 120%;
     padding: 0px 0px 0px 100px;
 }
 
-
 header h1 {
     color: #D9703C;
-    font-size: 80px;
+    font-size: 140px;
     font-family: Nohemi, sans-serif;
     font-weight: 700;
-    /* si elijo una tipografia en regular en este caso, con solo aplicarla en "font-family" lo pone en regular como predeterminado? o tambien tengo que aclararle en "font-weigth" el numero correspondiente a ese peso segun indica la tipografia?
-    RTA: siempre se aplica por default la versión regular*/
-
+    line-height: 90%;
     padding: 0px 0px 0px 100px;
 
 }
 
 header h2 {
-    color: #D9703C;
+    color: #000000;
     font-size: 40px;
     font-family: Archivo, sans-serif;
     font-style: italic;
     font-weight: 800;
+    line-height: 0%;
     padding: 0px 0px 0px 100px;
 }
 
 .foto-cv {
     padding: 50px 15px;
-    float: right;
+    float: left;
     padding: 50px 50px;
 }
 
@@ -102,10 +103,15 @@ header h2 {
     padding: 0px 50px;
 }
 
+#sobre-mi {
+    background-color: #D9703C;
+
+}
+
 #sobre-mi p {
     /* Este parrafo me quedó largo en la visualización del servidor y no supe como resolverlo
     RTA: la propiedad es max-width */
-    color: #3342CC;
+    color: #ffffff;
     text-align: left;
     font-family: Archivo, sans-serif;
     font-size: 26px;
@@ -119,6 +125,41 @@ ul {
     padding: 0px;
     font-family: Archivo, sans-serif;
 }
+
+h3 {
+    color: #000000;
+    text-align: left;
+    font-family: Archivo, sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    padding: 0px 50px;
+}
+
+#sobre-mi h3 {
+    color: #ffffff;
+    text-align: left;
+    font-family: Archivo, sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    padding: 0px 50px;
+}
+
+h4 {
+    color: #D9703C;
+    text-align: left;
+    font-family: Nohemy, sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+h5 {
+    color: #D9703C;
+    text-align: left;
+    font-family: Archivo, sans-serif;
+    font-size: 24px;
+    padding: 0px 50px;
+}
+
 
 /* Comentarios de mis primeros avances con CSS:
 Esto es lo que pude avanzar por ahora,por momentos me cuesta un poco saber que selector de etiqueta usar, lo hago un poco por intuición aunque en algunas partes dudo si está bien.
