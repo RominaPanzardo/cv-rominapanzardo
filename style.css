@@ -2,11 +2,36 @@
 /* CSS Document */
 
 /*A partir de la clase del viernes pude sacarme varias dudas, todavia no tuve tiempo de ponerme a corregir*/
+.barra
+{
+background-color:#d9703c;
+height:115px;
+width:1920px;
+padding-left:156px;
+padding-right:104px;
+display:flex;
+flex-direction:row;
+justify-content:space-between;
+align-items:center;
+position:relative;
+}
+
+.logo-rp21
+{
+background-color:#ffffff;
+height:55px;
+width:85px;
+align-self:flex-start;
+left:156px;
+top:30px;
+position:absolute;
+padding:0px;
+}
 
 .presentación {
-    background-color: #E6E6E6;
-    height: 500px;
-    width: 1920px;
+    background-color: #ffffff;
+    height: 115px;
+    width: 100%;
     padding: 0px
         /* aca me costó definir la medida del rectangulo, me fijé las medidas de mi navegador pero nunca llegaba hacia los extremos
     RTA: no está bueno utilizar medidas fijas a menos que se trate de elementos pequeños, acá podrías utilizar de ancho 100% para que ocupe el total del ancho de la pantalla, sea cual sea el tamaño de la pantalla en la que se ce, y además el alto que lo den los elementos internos, o sea los tamaños tipograficos + paddings + margins de los mismos*/
@@ -16,7 +41,8 @@ header h3 {
     color: #D9703C;
     font-size: 36px;
     font-family: Archivo, sans-serif;
-       font-style: italic; /*indentado*/
+    font-style: italic;
+    /*indentado*/
     font-weight: 300;
     padding: 0px 0px 0px 100px;
 }
@@ -27,7 +53,7 @@ header h1 {
     font-size: 80px;
     font-family: Nohemi, sans-serif;
     font-weight: 700;
-/* si elijo una tipografia en regular en este caso, con solo aplicarla en "font-family" lo pone en regular como predeterminado? o tambien tengo que aclararle en "font-weigth" el numero correspondiente a ese peso segun indica la tipografia?
+    /* si elijo una tipografia en regular en este caso, con solo aplicarla en "font-family" lo pone en regular como predeterminado? o tambien tengo que aclararle en "font-weigth" el numero correspondiente a ese peso segun indica la tipografia?
     RTA: siempre se aplica por default la versión regular*/
 
     padding: 0px 0px 0px 100px;
@@ -46,7 +72,7 @@ header h2 {
 .foto-cv {
     padding: 50px 15px;
     float: right;
-    padding: 50px 50px; /*por qué hay dos veces aplicado padding???*/
+    padding: 50px 50px;
 }
 
 #edad-localidad-titulos p {
@@ -63,7 +89,6 @@ header h2 {
     color: #3342CC;
     font-family: Nohemi, sans-serif;
     font-size: 24px;
-    font-family: Archivo, sans-serif;
     font-weight: 600;
     padding: 0px 50px;
     display: inline;
@@ -102,7 +127,3 @@ RTA: el diseño es libre, las propiedades al principio se aplican por intuición
 
 -¿Como se resuelven las interlineas? Probé con el padding pero me seguia quedando mal
 RTA: https://developer.mozilla.org/es/docs/Web/CSS/line-height.
-
--Si estoy diseñando en figma, ¿como hago para tomar la medida en px de la posicion de un objeto de mi mesa de trabajo? Lo hice medio a ojo, sospecho que debe haber una manera*/
-
-
