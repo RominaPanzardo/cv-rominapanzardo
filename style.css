@@ -17,7 +17,7 @@ header h3 {
     font-family: Archivo, sans-serif;
        font-style: italic;
     font-weight: 300;
-    padding: 50px 0px 0px 50px;
+    padding: 0px 0px 0px 100px;
 }
 
 
@@ -28,7 +28,7 @@ header h1 {
     font-weight: 700;
 /* si elijo una tipografia en regular en este caso, con solo aplicarla en "font-family" lo pone en regular como predeterminado? o tambien tengo que aclararle en "font-weigth" el numero correspondiente a ese peso segun indica la tipografia?*/
 
-    padding: 0px 0px 0px 50px;
+    padding: 0px 0px 0px 100px;
 
 }
 
@@ -38,7 +38,7 @@ header h2 {
     font-family: Archivo, sans-serif;
     font-style: italic;
     font-weight: 800;
-    padding: 0px 0px 0px 50px;
+    padding: 0px 0px 0px 100px;
 }
 
 .foto-cv {
