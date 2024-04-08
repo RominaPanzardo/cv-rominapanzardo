@@ -8,14 +8,15 @@
     height: 500px;
     width: 1920px;
     padding: 0px
-        /* aca me costó definir la medida del rectangulo, me fijé las medidas de mi navegador pero nunca llegaba hacia los extremos*/
+        /* aca me costó definir la medida del rectangulo, me fijé las medidas de mi navegador pero nunca llegaba hacia los extremos
+    RTA: no está bueno utilizar medidas fijas a menos que se trate de elementos pequeños, acá podrías utilizar de ancho 100% para que ocupe el total del ancho de la pantalla, sea cual sea el tamaño de la pantalla en la que se ce, y además el alto que lo den los elementos internos, o sea los tamaños tipograficos + paddings + margins de los mismos*/
 }
 
 header h3 {
     color: #D9703C;
     font-size: 36px;
     font-family: Archivo, sans-serif;
-       font-style: italic;
+       font-style: italic; /*indentado*/
     font-weight: 300;
     padding: 0px 0px 0px 100px;
 }
@@ -26,7 +27,8 @@ header h1 {
     font-size: 80px;
     font-family: Nohemi, sans-serif;
     font-weight: 700;
-/* si elijo una tipografia en regular en este caso, con solo aplicarla en "font-family" lo pone en regular como predeterminado? o tambien tengo que aclararle en "font-weigth" el numero correspondiente a ese peso segun indica la tipografia?*/
+/* si elijo una tipografia en regular en este caso, con solo aplicarla en "font-family" lo pone en regular como predeterminado? o tambien tengo que aclararle en "font-weigth" el numero correspondiente a ese peso segun indica la tipografia?
+    RTA: siempre se aplica por default la versión regular*/
 
     padding: 0px 0px 0px 100px;
 
@@ -44,7 +46,7 @@ header h2 {
 .foto-cv {
     padding: 50px 15px;
     float: right;
-    padding: 50px 50px;
+    padding: 50px 50px; /*por qué hay dos veces aplicado padding???*/
 }
 
 #edad-localidad-titulos p {
@@ -76,7 +78,8 @@ header h2 {
 }
 
 #sobre-mi p {
-    /* Este parrafo me quedó largo en la visualización del servidor y no supe como resolverlo */
+    /* Este parrafo me quedó largo en la visualización del servidor y no supe como resolverlo
+    RTA: la propiedad es max-width */
     color: #3342CC;
     text-align: left;
     font-family: Archivo, sans-serif;
@@ -95,8 +98,10 @@ ul {
 /* Comentarios de mis primeros avances con CSS:
 Esto es lo que pude avanzar por ahora,por momentos me cuesta un poco saber que selector de etiqueta usar, lo hago un poco por intuición aunque en algunas partes dudo si está bien.
 Por otro lado, ¿que tanto podria separarse el diseño que hagamos de lo que es un "cv tradicional"?
+RTA: el diseño es libre, las propiedades al principio se aplican por intuición, si estás usando figma también podés ver qué te dice la parte que es para devs, utilizá sólo las propiedades que conozcas o que hayamos dado y además que no sean de anchos fijos, si alguna puede mejorar te lo vamos a avisar. Además una vez que uses flexbox podés aplicar auto-layout a los elementos de figma y te traduce qué flex es el que estás necesitando, en los videos de figma lo explicamos un poquito
 
--¿Como se resuelven las interlineas? Probé con el padding pero me seguia quedando mal.
+-¿Como se resuelven las interlineas? Probé con el padding pero me seguia quedando mal
+RTA: https://developer.mozilla.org/es/docs/Web/CSS/line-height.
 
 -Si estoy diseñando en figma, ¿como hago para tomar la medida en px de la posicion de un objeto de mi mesa de trabajo? Lo hice medio a ojo, sospecho que debe haber una manera*/
 

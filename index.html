@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <section class='presentación'>
+        <section class='presentación'> <!--las sections y los articles no se utilizan ni en header ni en footer, si lo necesitás podés usar divs-->
             <img src="img/romina-fondonaranja.jpg" class="foto-cv" alt="foto cv romina" width="260px" height="260">
             <h3>Hola, yo soy</h3>
             <h1>ROMINA <br>
@@ -32,16 +32,16 @@
                 <p>23 años</p>
                 <p>Banfield,Buenos Aires</p>
             </div>
-            <!--aca dudo si esté bien la manera en que dividí la parte de los titulos y la informacion. No supe cual era la manera correcta de darle la propiedad en css por separado y que a su vez aparezcan inline. Lo que quise hacer es que "Edad y localidad" aparezcan en regular y la info en una siguiente linea abajo en Bold-->
+            <!--aca dudo si esté bien la manera en que dividí la parte de los titulos y la informacion. No supe cual era la manera correcta de darle la propiedad en css por separado y que a su vez aparezcan inline. Lo que quise hacer es que "Edad y localidad" aparezcan en regular y la info en una siguiente linea abajo en Bold
+        RTA: con flexbox se arregla, igual yo lo pondría como un li con dos p, y que cada p tenga una class distinta, porque así separados como están te van a quedar desfasados -->
         </section>
-
     </header>
 
 
-    <section id="numeroymail">
+    <section id="numeroymail"> <!--esta section está volando en el ciberespacio, que vaya al head o al main. además podrías utilizar la etiqueta address que sirve específicamente para contacto-->
         <ul>
             <li>Telefono: 1122798397</li>
-            <li>Mail: rominapanzardo.dg@gmail.com</li>
+            <li>Mail: rominapanzardo.dg@gmail.com</li> <!--hay una etiqueta a específica para mail y teléfono, o podrías usarun link de wsp-->
             <li> <a target="_blank" href="https://www.linkedin.com/in/romina-panzardo"> Perfil de linkedin</a> </li>
             <li> <a target="_blank" href="https://www.behance.net/rominapanzardo"> Portfolio</a> </li>
         </ul>
@@ -51,7 +51,7 @@
         <section id="sobre-mi">
             <h3> Sobre Mi</h3>
             <p>Me considero una apasionada por el diseño, buscando aportar creatividad y los mejores resultados, como
-                también una persona comprometida en desarrollar mis habilidades de manera constante</p>
+                también una persona comprometida en desarrollar mis habilidades de manera constante</p> <!--que esto vaya en una sola línea, la parte visual después la arreglás con css-->
         </section>
 
         <section id:formación-academica>
@@ -70,7 +70,7 @@
 
         </section>
 
-        <hr>
+        <hr> <!--dijimos algo muy importante sobre estas etiquetas en clases-->
 
         <section id:experiencia-laboral>
             <h3> Experiencia laboral</h3>
@@ -102,14 +102,14 @@
         </section>
         <hr>
 
-        <section id:idiomas>
+        <section id:idiomas> <!--estas sections y ids están complejos que tengan el mismo nombre, ponele algo más específico como section-idiomas y lista-idiomas o si funnción es vincularlo a css dejaría solo el id y en css llamaría como " #idiomas ul {} " además el id está mal escrito-->
             <h3> Idiomas</h3>
             <ul id="idiomas">
                 <li>Español: Idioma nativo</li>
                 <li>Ingles: B2</li>
             </ul>
         </section>
-        <section id:skills>
+        <section id:skills> <!--el id está mal escrito -->
             <h3> Skills</h3>
             <ul>
                 <li>Photoshop</li>
@@ -126,7 +126,8 @@
 
     <footer>
         <p id="parrafo-del-footer">Curriculum Vitae para Computación III</p>
-        <!--Es necesaria otra info en el footer? O es opcional? Se me ocurre dejar ahí la info de contacto-->
+        <!--Es necesaria otra info en el footer? O es opcional? Se me ocurre dejar ahí la info de contacto
+        RTA: sí podrías poner de nuevo el contacto, pero así está bien, el footer no se destaca por ser muy grande-->
     </footer>
 
 </body>
