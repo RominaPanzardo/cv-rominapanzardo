@@ -17,7 +17,7 @@
 .logo-blanco.png {
     height: 55px;
     width: 85px;
-    padding:0px;
+    padding: 0px;
     left: 156px;
     top: 30px;
     position: relative;
@@ -26,10 +26,30 @@
 
 .header {
     background-color: #ffffff;
+    height: 100%;
     width: 100%;
-    padding: 0px
-        /* aca me costó definir la medida del rectangulo, me fijé las medidas de mi navegador pero nunca llegaba hacia los extremos
+    padding: 0px;
+    position: relative;
+
+    /* aca me costó definir la medida del rectangulo, me fijé las medidas de mi navegador pero nunca llegaba hacia los extremos
     RTA: no está bueno utilizar medidas fijas a menos que se trate de elementos pequeños, acá podrías utilizar de ancho 100% para que ocupe el total del ancho de la pantalla, sea cual sea el tamaño de la pantalla en la que se ce, y además el alto que lo den los elementos internos, o sea los tamaños tipograficos + paddings + margins de los mismos*/
+}
+
+.sobre-mi {
+    color: #ffffff;
+    text-align: left;
+    vertical-align: text-top;
+    font-size: 32px;
+    font-family: Archivo;
+    left: 699px;
+    top: 425px;
+    width: 1021px;
+    height: 282px;
+    position: absolute;
+    letter-spacing: 2px;
+    line-height: 108.89792442321777px;
+    border-style: hidden;
+    outline: none;
 }
 
 .emojisaludando {
@@ -76,25 +96,6 @@ header h2 {
     padding: 50px 50px;
 }
 
-#edad-localidad-titulos p {
-    color: #3342CC;
-    font-size: 24px;
-    font-family: Archivo, sans-serif;
-    font-weight: 0;
-    padding: 0px 50px;
-    display: inline;
-}
-
-/* esta parte es la que comenté en el html, que dudaba en como separar las etiquetas por el uso que queria darles, la primera linea en regular y la segunda el bold*/
-#edad-localidad-datos p {
-    color: #3342CC;
-    font-family: Nohemi, sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    padding: 0px 50px;
-    display: inline;
-}
-
 #sobre-mi h3 {
     color: #D9703C;
     font-size: 38px;
@@ -105,7 +106,10 @@ header h2 {
 
 #sobre-mi {
     background-color: #D9703C;
-
+    height: 900px;
+    width: 100%;
+    padding-left: 156px;
+    padding-right: 104px;
 }
 
 #sobre-mi p {
@@ -118,7 +122,6 @@ header h2 {
     font-weight: 400;
     padding: 0px 50px;
 }
-
 
 ul {
     list-style-type: none;
