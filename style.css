@@ -1,6 +1,11 @@
 @charset "utf-8";
 
 /* CSS Document */
+
+*{
+    padding:0px
+}
+/*HEADER*/
 .barra {
     background-color: #d9703c;
     height: 115px;
@@ -15,49 +20,23 @@
 }
 
 .logo-blanco.png {
-    height: 55px;
-    width: 85px;
     padding: 0px;
-    left: 156px;
-    top: 30px;
-    position: relative;
-    width: 100%;
+   
 }
 
-.header {
+.presentacion {
     background-color: #ffffff;
-    height: 100%;
     width: 100%;
-    padding: 0px;
-    position: relative;
+}
 
     /* aca me costó definir la medida del rectangulo, me fijé las medidas de mi navegador pero nunca llegaba hacia los extremos
     RTA: no está bueno utilizar medidas fijas a menos que se trate de elementos pequeños, acá podrías utilizar de ancho 100% para que ocupe el total del ancho de la pantalla, sea cual sea el tamaño de la pantalla en la que se ce, y además el alto que lo den los elementos internos, o sea los tamaños tipograficos + paddings + margins de los mismos*/
-}
 
-.sobre-mi {
-    color: #ffffff;
-    text-align: left;
-    vertical-align: text-top;
-    font-size: 32px;
-    font-family: Archivo;
-    left: 699px;
-    top: 425px;
-    width: 1021px;
-    height: 282px;
-    position: absolute;
-    letter-spacing: 2px;
-    line-height: 108.89792442321777px;
-    border-style: hidden;
-    outline: none;
-}
+/*MAIN*/
 
-.emojisaludando {
-    height: 40px;
-    width: 40px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+#emoji-mano {
+    padding: 50px 50px;
+    margin: 0px;
 }
 
 header h3 {
@@ -90,8 +69,24 @@ header h2 {
     padding: 0px 0px 0px 100px;
 }
 
+/*MAIN*/
+.sobre-mi {
+    color: #ffffff;
+    text-align: left;
+    vertical-align: text-top;
+    font-size: 32px;
+    font-family: Archivo;
+    left: 699px;
+    top: 425px;
+    width: 1021px;
+    height: 282px;
+    position: absolute;
+    letter-spacing: 2px;
+    line-height: 108.89792442321777px;
+    border-style: hidden;
+    outline: none;
+}
 .foto-cv {
-    padding: 50px 15px;
     float: left;
     padding: 50px 50px;
 }
@@ -118,9 +113,9 @@ header h2 {
     color: #ffffff;
     text-align: left;
     font-family: Archivo, sans-serif;
-    font-size: 26px;
-    font-weight: 400;
+    font-size: 32px;
     padding: 0px 50px;
+    max-width:1020px;
 }
 
 ul {

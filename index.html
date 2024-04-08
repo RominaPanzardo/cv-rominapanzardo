@@ -16,54 +16,37 @@
 <body>
     <header>
         <div class="barra">
-            <img src="img/logo-blanco.png" alt="logo-blanco">
+            <img src="img/logo-blanco.png" alt="logo-blanco" width="85px" height="55px">
             <p>Sobre mí</p>
             <p>Portfolio</p>
             <p>Contacto</p>
         </div>
         <div class='presentación'>
             <!--las sections y los articles no se utilizan ni en header ni en footer, si lo necesitás podés usar divs-->
-            <img src="emoji-mano.png" alt="emojisaludando">
+            <img src="img/emoji-mano.png" alt="emoji-mano" width="40px" height="40px">
             <h3>Hola, yo soy</h3>
-            <h1>Romina Panzardo</h1>
+            <h1>Romina <br>
+                Panzardo</h1>
             <h2>Diseñadora grafica jr</h2>
     </header>
 
     <main>
         <section id="sobre-mi">
-            <img src="img/romina-fondonaranja.jpg" class="foto-cv" alt="foto cv romina" width="260px" height="260">
-            <h3> Sobre Mi</h3>
-            <p>Me considero una apasionada por el diseño, buscando aportar creatividad y los mejores resultados, como
-                también una persona comprometida en desarrollar mis habilidades de manera constante</p>
-
-            <div id="edad-localidad-titulos">
-                <p>Edad</li>
-                <p>Localidad</p>
-            </div>
-
-            <div id="edad-localidad-datos">
-                <p>23 años</p>
-                <p>Banfield,Buenos Aires</p>
-            </div>
+            <img src="img/romina-byn.jpg" class="foto-cv" alt="foto cv romina" width="478px" height="478">
+            <ul id="edad-localidad">
+                <li>Edad
+                    <p>23 años</p>
+                </li>
+                <li> Localidad
+                    <p>Banfield,Buenos Aires</p>
+                </li>
+            </ul>
             <!--aca dudo si esté bien la manera en que dividí la parte de los titulos y la informacion. No supe cual era la manera correcta de darle la propiedad en css por separado y que a su vez aparezcan inline. Lo que quise hacer es que "Edad y localidad" aparezcan en regular y la info en una siguiente linea abajo en Bold
             RTA: con flexbox se arregla, igual yo lo pondría como un li con dos p, y que cada p tenga una class distinta, porque así separados como están te van a quedar desfasados -->
 
-        </section>
-
-        <section id="Estudios">
-
-            <h3> Estudios</h3>
-            <div>
-                <h5>[2019-Actualidad]</h5>
-                <h4>Licenciatura en Diseño y comunicación visual</h4>
-                <p>Universidad Nacional de Lanus</p>
-            </div>
-
-            <div>
-                <h5>[2012-2017]</h5>
-                <h4>Bachiller en Economía y Administración de Empresas.</h4>
-                <p>Colegio San Juan de la Cruz</p>
-            </div>
+            <h3> Sobre Mi</h3>
+            <p>Me considero una apasionada por el diseño, buscando aportar creatividad y los mejores resultados, como
+                también una persona comprometida en desarrollar mis habilidades de manera constante</p>
 
         </section>
 
@@ -96,6 +79,23 @@
                 </ul>
             </div>
         </section>
+        <!--ESTUDIOS-->
+        <section id="Estudios">
+
+            <h3> Estudios</h3>
+            <div>
+                <h5>[2019-Actualidad]</h5>
+                <h4>Licenciatura en Diseño y comunicación visual</h4>
+                <p>Universidad Nacional de Lanus</p>
+            </div>
+
+            <div>
+                <h5>[2012-2017]</h5>
+                <h4>Bachiller en Economía y Administración de Empresas.</h4>
+                <p>Colegio San Juan de la Cruz</p>
+            </div>
+
+        </section>
 
         <section id="idiomas">
             <!--estas sections y ids están complejos que tengan el mismo nombre, ponele algo más específico como section-idiomas y lista-idiomas o si funnción es vincularlo a css dejaría solo el id y en css llamaría como " #idiomas ul {} " -->
@@ -113,7 +113,7 @@
                 <li>Ilustrator</li>
                 <li>Figma</li>
             </ul>
-           
+
 
         </section>
         <section id="numeroymail">
