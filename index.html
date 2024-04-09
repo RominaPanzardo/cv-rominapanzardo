@@ -15,69 +15,72 @@
 
 <body>
     <header>
-        <div class="barra">
+        <nav class="botonera">
             <img src="img/logo-blanco.png" alt="logo-blanco" width="85px" height="55px">
-            <p>Sobre mí</p>
-            <p>Portfolio</p>
-            <p>Contacto</p>
-        </div>
+            <p><a>Sobre mí</a></p>
+            <p><a>Trabajos</a></p>
+            <p><a>Contacto</a></p>
+
+        </nav>
         <div class='presentación'>
-            <!--las sections y los articles no se utilizan ni en header ni en footer, si lo necesitás podés usar divs-->
-            <img src="img/emoji-mano.png" alt="emoji-mano" width="40px" height="40px">
             <h3>Hola, yo soy</h3>
-            <h1>Romina <br>
-                Panzardo</h1>
+            <h1>Romina Panzardo</h1>
             <h2>Diseñadora grafica jr</h2>
     </header>
 
     <main>
         <section id="sobre-mi">
-            <img src="img/romina-byn.jpg" class="foto-cv" alt="foto cv romina" width="478px" height="478">
-            <ul id="edad-localidad">
-                <li>Edad
-                    <p>23 años</p>
-                </li>
-                <li> Localidad
-                    <p>Banfield,Buenos Aires</p>
-                </li>
-            </ul>
-            <!--aca dudo si esté bien la manera en que dividí la parte de los titulos y la informacion. No supe cual era la manera correcta de darle la propiedad en css por separado y que a su vez aparezcan inline. Lo que quise hacer es que "Edad y localidad" aparezcan en regular y la info en una siguiente linea abajo en Bold
-            RTA: con flexbox se arregla, igual yo lo pondría como un li con dos p, y que cada p tenga una class distinta, porque así separados como están te van a quedar desfasados -->
+            <article>
+                <h3>introducción</h4>
+                    <h4>Sobre mi</h4>
+                    <p>Mi aventura en el diseño comenzó mucho antes de que pudiera identificarla como tal. De niña, me
+                        encontraba profundamente inmersa en el mundo de las manualidades, creando con mis manos desde
+                        pequeñas esculturas de papel hasta complejos collages que contaban historias. La edición de
+                        fotos vino después, como un descubrimiento que amplió mi horizonte creativo.
+
+                        Al estudiar diseño gráfico encuentro en cada proyecto una oportunidad para sumergirme en un
+                        nuevo desafíos, explorar diferentes perspectivas y perfeccionar mi habilidad para comunicar
+                        visualmente ideas complejas de manera sencilla y atractiva.</p>
+
+            </article> <img src="img/romina-byn.jpg" class="foto-cv" alt="foto cv romina" width="478px" height="478">
+
+
 
             <h3> Sobre Mi</h3>
             <p>Me considero una apasionada por el diseño, buscando aportar creatividad y los mejores resultados, como
                 también una persona comprometida en desarrollar mis habilidades de manera constante</p>
 
         </section>
-
-        <section id="Esperiencia">
-            <h3> Experiencia laboral</h3>
-            <div>
-                <h5>[2023-Actualidad] </h5>
-                <h4>Auxiliar de Cátedra en la materia Taller de Diseño 3</h4>
-                <p>Universidad Nacional de Lanús</p>
-                </li>
-            </div>
-            <div>
-                <h5>[2021-Actualidad]</h5>
-                <h4>Emprendimiento personal</h4>
-                <ul id="experiencia-emprendimiento">
-                    <li>Atención al cliente</li>
-                    <li>Diseño y maquetación de publicaciones digitales e impresas.</li>
-                    <li>Creación de diseños originales y atractivos para cuadros impresos.</li>
-                    <li>Digitalización y preparación para impresión</li>
-                </ul>
-            </div>
-            <div>
-                <h5>[2021-Actualidad]</h5>
-                <h4>diseño grafico freelance</h4>
-                <ul id="experiencia-freelance">
-                    <li>Diseño y desarrollo de marcas</li>
-                    <li>Creación de logotipos, folletos, banners y otros elementos gráficos</li>
-                    <li>Creación de diseños originales y atractivos para cuadros impresos.</li>
-                    <li> Desarrollo de identidades visuales para marcas</li>
-                </ul>
-            </div>
+        <section>
+            <article id="Esperiencia">
+                <h3> Experiencia laboral</h3>
+                <div>
+                    <h5>[2023-Actualidad] </h5>
+                    <h4>Auxiliar de Cátedra en la materia Taller de Diseño 3</h4>
+                    <p>Universidad Nacional de Lanús</p>
+                    </li>
+                </div>
+                <div>
+                    <h5>[2021-Actualidad]</h5>
+                    <h4>Emprendimiento personal</h4>
+                    <ul id="experiencia-emprendimiento">
+                        <li>Atención al cliente</li>
+                        <li>Diseño y maquetación de publicaciones digitales e impresas.</li>
+                        <li>Creación de diseños originales y atractivos para cuadros impresos.</li>
+                        <li>Digitalización y preparación para impresión</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>[2021-Actualidad]</h5>
+                    <h4>diseño grafico freelance</h4>
+                    <ul id="experiencia-freelance">
+                        <li>Diseño y desarrollo de marcas</li>
+                        <li>Creación de logotipos, folletos, banners y otros elementos gráficos</li>
+                        <li>Creación de diseños originales y atractivos para cuadros impresos.</li>
+                        <li> Desarrollo de identidades visuales para marcas</li>
+                    </ul>
+                </div>
+            </article>
         </section>
         <!--ESTUDIOS-->
         <section id="Estudios">

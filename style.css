@@ -2,167 +2,45 @@
 
 /* CSS Document */
 
-*{
-    padding:0px
-}
-/*HEADER*/
-.barra {
-    background-color: #d9703c;
-    height: 115px;
-    width: 100%;
-    padding-left: 156px;
-    padding-right: 104px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
-
-.logo-blanco.png {
-    padding: 0px;
-   
-}
-
-.presentacion {
-    background-color: #ffffff;
-    width: 100%;
-}
-
-    /* aca me costó definir la medida del rectangulo, me fijé las medidas de mi navegador pero nunca llegaba hacia los extremos
-    RTA: no está bueno utilizar medidas fijas a menos que se trate de elementos pequeños, acá podrías utilizar de ancho 100% para que ocupe el total del ancho de la pantalla, sea cual sea el tamaño de la pantalla en la que se ce, y además el alto que lo den los elementos internos, o sea los tamaños tipograficos + paddings + margins de los mismos*/
-
-/*MAIN*/
-
-#emoji-mano {
-    padding: 50px 50px;
+* {
     margin: 0px;
-}
+    padding: 0px;
+   }
 
-header h3 {
-    color: #000000;
-    font-size: 36px;
-    font-family: Archivo, sans-serif;
-    font-style: italic;
-    font-weight: 300;
-    line-height: 120%;
-    padding: 0px 0px 0px 100px;
-}
-
-header h1 {
-    color: #D9703C;
-    font-size: 140px;
-    font-family: Nohemi, sans-serif;
-    font-weight: 700;
-    line-height: 90%;
-    padding: 0px 0px 0px 100px;
-
-}
-
-header h2 {
-    color: #000000;
-    font-size: 40px;
-    font-family: Archivo, sans-serif;
-    font-style: italic;
-    font-weight: 800;
-    line-height: 0%;
-    padding: 0px 0px 0px 100px;
-}
-
-/*MAIN*/
-.sobre-mi {
-    color: #ffffff;
-    text-align: left;
-    vertical-align: text-top;
-    font-size: 32px;
-    font-family: Archivo;
-    left: 699px;
-    top: 425px;
-    width: 1021px;
-    height: 282px;
-    position: absolute;
-    letter-spacing: 2px;
-    line-height: 108.89792442321777px;
-    border-style: hidden;
-    outline: none;
-}
-.foto-cv {
-    float: left;
-    padding: 50px 50px;
-}
-
-#sobre-mi h3 {
-    color: #D9703C;
-    font-size: 38px;
-    font-weight: 600;
-    font-family: Nohemi, sans-serif;
-    padding: 0px 50px;
-}
-
-#sobre-mi {
-    background-color: #D9703C;
-    height: 900px;
-    width: 100%;
-    padding-left: 156px;
-    padding-right: 104px;
-}
-
-#sobre-mi p {
-    /* Este parrafo me quedó largo en la visualización del servidor y no supe como resolverlo
-    RTA: la propiedad es max-width */
-    color: #ffffff;
-    text-align: left;
-    font-family: Archivo, sans-serif;
-    font-size: 32px;
-    padding: 0px 50px;
-    max-width:1020px;
+body {
+    background-color: #FFF;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0px;
-    font-family: Archivo, sans-serif;
+    list-style: none;
 }
 
-h3 {
-    color: #000000;
-    text-align: left;
-    font-family: Archivo, sans-serif;
-    font-size: 64px;
-    font-weight: 600;
-    padding: 0px 50px;
+header {
+    background-color: #434DAC;
+    padding-right: 775px;
+    width: 100%;
 }
 
-#sobre-mi h3 {
-    color: #ffffff;
-    text-align: left;
-    font-family: Archivo, sans-serif;
-    font-size: 64px;
-    font-weight: 600;
-    padding: 0px 50px;
+.botonera {
+    display: flex;
+   height: 90px;
+    margin: 34px 166px 20px 856px;
+    padding: 0px 104px 0px 156px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 122px;
+    border: 4px solid #FFF;
+    backdrop-filter: blur(7.5px);
 }
 
-h4 {
-    color: #D9703C;
-    text-align: left;
-    font-family: Nohemy, sans-serif;
+.botonera p {
+    color: #FFF;
+    font-family: Archivo;
+    font-size: 32px;
     font-weight: 800;
-    font-size: 30px;
+
 }
-
-h5 {
-    color: #D9703C;
-    text-align: left;
-    font-family: Archivo, sans-serif;
-    font-size: 24px;
-    padding: 0px 50px;
-}
-
-
-/* Comentarios de mis primeros avances con CSS:
-Esto es lo que pude avanzar por ahora,por momentos me cuesta un poco saber que selector de etiqueta usar, lo hago un poco por intuición aunque en algunas partes dudo si está bien.
-Por otro lado, ¿que tanto podria separarse el diseño que hagamos de lo que es un "cv tradicional"?
-RTA: el diseño es libre, las propiedades al principio se aplican por intuición, si estás usando figma también podés ver qué te dice la parte que es para devs, utilizá sólo las propiedades que conozcas o que hayamos dado y además que no sean de anchos fijos, si alguna puede mejorar te lo vamos a avisar. Además una vez que uses flexbox podés aplicar auto-layout a los elementos de figma y te traduce qué flex es el que estás necesitando, en los videos de figma lo explicamos un poquito
-
--¿Como se resuelven las interlineas? Probé con el padding pero me seguia quedando mal
-RTA: https://developer.mozilla.org/es/docs/Web/CSS/line-height.
