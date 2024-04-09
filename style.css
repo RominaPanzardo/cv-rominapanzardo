@@ -5,7 +5,7 @@
 * {
     margin: 0px;
     padding: 0px;
-   }
+}
 
 body {
     background-color: #FFF;
@@ -26,7 +26,7 @@ header {
 
 .botonera {
     display: flex;
-   height: 90px;
+    height: 90px;
     margin: 34px 166px 20px 856px;
     padding: 0px 104px 0px 156px;
     flex-direction: row;
@@ -42,5 +42,5 @@ header {
     font-family: Archivo;
     font-size: 32px;
     font-weight: 800;
-
 }
+
