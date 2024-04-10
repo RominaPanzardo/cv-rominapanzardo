@@ -50,3 +50,10 @@ h1 {
     font-weight: 400;
 
 }
+#botones-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0;
+}
