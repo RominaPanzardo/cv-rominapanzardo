@@ -9,56 +9,63 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <!--La tipografia Nohemi no se encuentra en google fonts, la agregué en la carpeta de "fonts" -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Hairline&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <header>
         <nav class="botonera">
-            <img src="img/logo-blanco.png" alt="logo-blanco" width="85px" height="55px">
             <ul>
+                <img src="img/logo-blanco.png" alt="logo-blanco" width="85px" height="55px">
                 <li><a>Sobre mí</a></li>
                 <li><a>Trabajos</a></li>
                 <li><a>Contacto</a></li>
             </ul>
         </nav>
 
-        <div id="botones-contacto">
-            <a href="mailto:rominapanzardo.dg@gmail.com" target="_blank"> <img src="img/boton-gmail-naranja.svg"  alt="boton gmail"width="64px" height="64px">  </a>
-            <a href="https://www.behance.net/rominapanzardo" target="_blank"> <img src="img/boton-behance-naranja.svg"  alt="boton behance"width="64px" height="64px"> </a> 
-            <a href="https://www.linkedin.com/in/romina-panzardo-1b58732b6/" target="_blank"> <img src="img/boton-linkedin-naranja.svg"  alt="boton linkedin" width="64px" height="64px"></a>
-        </div>
-
-        <div class='presentación'>
+        <div class="presentación"> >
+            <!--tengo que resolver el tema de los espacios entre cajas de texto, en el boceto uso interlineas negativas en algunas partes y todavia no sé como hacerlo-->
             <h3>Hola, yo soy</h3>
-            <h1>Romina <br> Panzardo <br> —</h1>
-            <h2>Diseñadora grafica jr</h2>
+            <h1>Romina <br> Panzardo</h1>
+            <h2>Diseñadora <br> grafica jr</h2>
+        </div>
+        <div id="botones-contacto">
+            <!--no supe resolver estos botones como queria en el css , habia probado poner este div arriba del "div presentacion" y quedaban bien los botones pero quedaba un espacio entre los dos divs-->
+            <a href="mailto:rominapanzardo.dg@gmail.com" target="_blank"> <img src="img/boton-gmail-naranja.svg"
+                    alt="boton gmail" width="64px" height="64px"> </a>
+            <a href="https://www.behance.net/rominapanzardo" target="_blank"> <img src="img/boton-behance-naranja.svg"
+                    alt="boton behance" width="64px" height="64px"> </a>
+            <a href="https://www.linkedin.com/in/romina-panzardo-1b58732b6/" target="_blank"> <img
+                    src="img/boton-linkedin-naranja.svg" alt="boton linkedin" width="64px" height="64px"></a>
+        </div>
     </header>
-
+    <!--FIN HEADER-->
+    <!--MAIN-->
+    <!--estaria bien esta forma de dejar comentarios para la entrega final? porque me sirve para no marearme tanto cuando trabajo-->
     <main>
-        <section id="sobre-mi">
-            <article>
+        <section class="sobre-mi">
+            <article class="introduccion">
                 <h3>introducción</h4>
                     <h4>Sobre mi</h4>
+                    <h5>— desde la Pasión hasta la Profesión</h5>
                     <p>Mi aventura en el diseño comenzó mucho antes de que pudiera identificarla como tal. De niña, me
                         encontraba profundamente inmersa en el mundo de las manualidades, creando con mis manos desde
-                        pequeñas esculturas de papel hasta complejos collages que contaban historias. La edición de
+                        pequeñas manualidades con papel hasta complejos collages que contaban historias. La edición de
                         fotos vino después, como un descubrimiento que amplió mi horizonte creativo.
 
                         Al estudiar diseño gráfico encuentro en cada proyecto una oportunidad para sumergirme en un
                         nuevo desafíos, explorar diferentes perspectivas y perfeccionar mi habilidad para comunicar
-                        visualmente ideas complejas de manera sencilla y atractiva.</p>
+                        como tambien mis herramientas.</p>
+            </article>
 
-            </article> <img src="img/romina-byn.jpg" class="foto-cv" alt="foto cv romina" width="478px" height="478">
-
-
-
-            <h3> Sobre Mi</h3>
-            <p>Me considero una apasionada por el diseño, buscando aportar creatividad y los mejores resultados, como
-                también una persona comprometida en desarrollar mis habilidades de manera constante</p>
-
+            </article class="imagen">
+            <img src="img/romina-byn.jpg" class="foto-cv" alt="foto cv romina" width="478px" height="478">
+            </article>
         </section>
+
+        <!--EXPERIENCIA-->
+
         <section>
             <article id="Experiencia">
                 <h3> Experiencia laboral</h3>
@@ -90,9 +97,10 @@
                 </div>
             </article>
         </section>
-        <!--ESTUDIOS-->
-        <section id="Estudios">
 
+        <!--ESTUDIOS-->
+
+        <section id="Estudios">
             <h3> Estudios</h3>
             <div>
                 <h5>[2019-Actualidad]</h5>
@@ -109,9 +117,8 @@
         </section>
 
         <section id="idiomas">
-            <!--estas sections y ids están complejos que tengan el mismo nombre, ponele algo más específico como section-idiomas y lista-idiomas o si funnción es vincularlo a css dejaría solo el id y en css llamaría como " #idiomas ul {} " -->
             <h3> Idiomas</h3>
-            <ul id=" lista-idiomas">
+            <ul id=" lista-idiomas"> <!--aca tenia la duda si volverlo a nombrar-->
                 <li>Español: Idioma nativo</li>
                 <li>Ingles: B2</li>
             </ul>
@@ -124,21 +131,7 @@
                 <li>Ilustrator</li>
                 <li>Figma</li>
             </ul>
-
-
         </section>
-        <section id="numeroymail">
-            <!-- además podrías utilizar la etiqueta address que sirve específicamente para contacto-->
-            <ul>
-                <li>Telefono: 1122798397</li>
-                <li>Mail: rominapanzardo.dg@gmail.com</li>
-                <!--hay una etiqueta a específica para mail y teléfono, o podrías usarun link de wsp-->
-                <li> <a target="_blank" href="https://www.linkedin.com/in/romina-panzardo"> Perfil de linkedin</a> </li>
-                <li> <a target="_blank" href="https://www.behance.net/rominapanzardo"> Portfolio</a> </li>
-            </ul>
-
-        </section>
-
 
     </main>
 
@@ -150,5 +143,5 @@
 </body>
 
 </html>
-<!--link de figma: le falta mucho, aun es un boceto y va a haber cambios pero por ahora intenté replicar el header en css lo mejor que pude
+<!--link de figma:
 https://www.figma.com/file/WK1WXK7ULTz1zqrW1Tc6Rn/cv-rominapanzardo?type=design&node-id=1%3A93&mode=dev&t=drp8cNpvRlzo4oGo-1 -->

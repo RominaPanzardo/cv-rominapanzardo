@@ -1,59 +1,84 @@
-@charset "utf-8";
-
-/* CSS Document */
-
 * {
     margin: 0px;
     padding: 0px;
-}
-
-body {
-    background-color: #FFF;
-    margin: 0px auto;
-    display: flex;
-    flex-direction: column;
-}
-
-ul {
     list-style: none;
 }
 
-.botonera {
-    display: flex;
-    height: 90px;
-    width: 100%;
-    padding: 0px 120px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 122px;
-    border: 4px solid #FFF;
+body {
+    font-family: Archivo;
+    color: #434DAC;
+    background-color: #FFF;
 }
 
 header {
     background-color: #434DAC;
     background-size: 100%;
-    height: 980px;
-    width: 100%;
-    justify-content: center;
 }
 
-.presentacion {
-    padding: 246px 632px 151px 149px;
+nav ul {
+    padding: 30px 120px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botonera {
+   /*al hacer scroll quedarian fijos en la pantalla de la pantalla.*/
+    background-color: #434dac;
+    height: 130px;
+    color: #fff;
+    display: flex;
+}
+
+nav ul li {
+    color: #fff;
+    font-family: Archivo;
+    font-size: 24px;
+    font-weight: 800;
+    border-radius: 60px;
+    border: 1px solid #fff;
+    padding: 20px 40px;
+}
+
+.presentación {
+    padding: 0 86px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+h1,h2 {
+    font-size: 110px;
+    font-weight: 400;
 }
 
 h1 {
     color: #D9703C;
-    font-family: "Bungee Spice";
-    font-size: 128px;
-    font-style: normal;
-    font-weight: 400;
-
+    font-family: "Bungee", sans-serif;
 }
-#botones-contacto {
+
+header h2,h3 {
+    color: #FFF;
+    font-family: "Bungee Hairline";
+}
+
+header h3 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+header #botones-contacto { /*al hacer scroll quedarian fijos en la pantalla de la pantalla.*/
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-end;
-    padding: 0;
+    justify-content: space-between;
+} /*no pude resolver que esten alineados verticalmente a la mitad del header como en el boceto de figma*/
+
+main {
+    padding: 0 86px;
+    display: flex;
 }
+
+/*en figma está el boceto casi terminado del cv, dejé algunos comentarios ahí porque en secciones complejas tengo algunas dudas en como dividir correctamente las etiquetas.
+https://www.figma.com/file/WK1WXK7ULTz1zqrW1Tc6Rn/cv-rominapanzardo?type=design&node-id=1%3A93&mode=dev&t=drp8cNpvRlzo4oGo-1 */
