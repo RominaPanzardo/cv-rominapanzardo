@@ -16,16 +16,16 @@ header {
 }
 
 nav ul {
-    padding: 30px 120px 30px;
+    padding: 30px 120px 30px; /*en lugar de un padding tan grande te va a convenir que la ul tenga un max-width, por ej 1600px, entonces va a crecer hasta cierto punto, pero sí le pondría un padding menor para que en pantallas más pequeñas no tengas un padding enorme pero tampoco esté pegado al borde, o algún tipo de justify */
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: flex; /*me hace mal que el logo no esté centrado respecto a los demás botones, igual es por dos px pero con algún tipo de alineación al centro va a ir mejor*/
+    justify-content: space-between; 
 }
 
 .botonera {
    /*al hacer scroll quedarian fijos en la pantalla de la pantalla.*/
-    background-color: #434dac;
-    height: 130px;
+    background-color: #434dac; /*el padre (header) ya tiene este bg, no hace falta volver a aplicarlo acá, a menos que el color fuese distinto*/
+    height: 130px; /*para mi si le sacás la altura queda mucho más simétrico y con los paddings tiene un buen tamaño, no haría falta aplicarlo*/
     color: #fff;
     display: flex;
 }
