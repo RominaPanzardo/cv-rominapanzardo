@@ -17,21 +17,23 @@
     <header>
         <nav class="botonera">
             <ul>
-                <img src="img/logo-blanco.png" alt="logo-blanco" width="85px" height="55px">
-                <li><a>Sobre mí</a></li>
+                <img src="img/logo-blanco.png" alt="logo-blanco" width="85px" height="55px"> <!--en una ul solo pueden haber li, pero el li puede contener otras cosas-->
+                <li><a>Sobre mí</a></li> <!--te falta el href, si todavía no lo tenés al link se pone un # para indicar que está vacío-->
                 <li><a>Trabajos</a></li>
                 <li><a>Contacto</a></li>
             </ul>
         </nav>
 
         <div class="presentación"> >
-            <!--tengo que resolver el tema de los espacios entre cajas de texto, en el boceto uso interlineas negativas en algunas partes y todavia no sé como hacerlo-->
+            <!--tengo que resolver el tema de los espacios entre cajas de texto, en el boceto uso interlineas negativas en algunas partes y todavia no sé como hacerlo
+            RTA: con position relative podés encimar cosas, pero deberías hacer más divs para que te queden los títulos en una sola caja, aunque como detalle de diseño creo que no es la mejor desición de diseño porque se va a leer "romina diseñadora panzardo gráfica"-->
             <h3>Hola, yo soy</h3>
             <h1>Romina <br> Panzardo</h1>
             <h2>Diseñadora <br> grafica jr</h2>
         </div>
         <div id="botones-contacto">
-            <!--no supe resolver estos botones como queria en el css , habia probado poner este div arriba del "div presentacion" y quedaban bien los botones pero quedaba un espacio entre los dos divs-->
+            <!--no supe resolver estos botones como queria en el css , habia probado poner este div arriba del "div presentacion" y quedaban bien los botones pero quedaba un espacio entre los dos divs
+            RTA: te faltan más cajas, en esta instancia tenés un header con 3 hijos que se van a mostrar en horizontal o vertical según el flex que tengan, si necesitás agrupar yo incluiría este div en la presentación así tenés como padre a "presentación" y 4 hijos (h3 h1 h2 y botones-contacto) para hacer flex, pero si quisieras que los títulos estén en columna necesitarías más divisiones, o sea ( (título)(botones-contacto ) te dejé más notas en figma -->
             <a href="mailto:rominapanzardo.dg@gmail.com" target="_blank"> <img src="img/boton-gmail-naranja.svg"
                     alt="boton gmail" width="64px" height="64px"> </a>
             <a href="https://www.behance.net/rominapanzardo" target="_blank"> <img src="img/boton-behance-naranja.svg"
@@ -42,7 +44,8 @@
     </header>
     <!--FIN HEADER-->
     <!--MAIN-->
-    <!--estaria bien esta forma de dejar comentarios para la entrega final? porque me sirve para no marearme tanto cuando trabajo-->
+    <!--estaria bien esta forma de dejar comentarios para la entrega final? porque me sirve para no marearme tanto cuando trabajo
+    RTA: totalmente, estos sí dejalos, en css también son válidos-->
     <main>
         <section class="sobre-mi">
             <article class="introduccion">
@@ -56,7 +59,7 @@
 
                         Al estudiar diseño gráfico encuentro en cada proyecto una oportunidad para sumergirme en un
                         nuevo desafíos, explorar diferentes perspectivas y perfeccionar mi habilidad para comunicar
-                        como tambien mis herramientas.</p>
+                        como tambien mis herramientas.</p> <!--que los textos queden en una sola línea-->
             </article>
 
             </article class="imagen">
@@ -118,7 +121,7 @@
 
         <section id="idiomas">
             <h3> Idiomas</h3>
-            <ul id=" lista-idiomas"> <!--aca tenia la duda si volverlo a nombrar-->
+            <ul id=" lista-idiomas"> <!--aca tenia la duda si volverlo a nombrar RTA: no hace falta, podés llamarlo en css como #idiomas ul {}-->
                 <li>Español: Idioma nativo</li>
                 <li>Ingles: B2</li>
             </ul>
