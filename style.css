@@ -214,7 +214,7 @@ main h4,
 .habilidadesyskills {
     margin: 0;
     padding: 0px;
-    display: inline-flex;
+    display: flex;
 }
 
 .habilidadesyskills {
@@ -224,23 +224,32 @@ main h4,
 }
 
 .herramientas {
+    padding: 0px 86px;
     background-color: #434DAC;
     color: #fff;
-    display: flex;
     width: 100%;
+}
+
+.adobeyoffice {
+    display: flex;
+    justify-content: center;
+
 }
 
 .adobe {
     display: flex;
-    flex-direction: column;
 }
 
 .contenedor-adobe {
     background-color: #FFF;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 9px;
+}
+
+.office {
+    display: flex;
+}
+
+.contenedor-office {
+    background-color: #FFF;
 }
 
 /*FIN HABILIDADES-
@@ -251,30 +260,26 @@ SKILLS*/
     width: 100%;
 }
 
-
 /*fin skills*/
 /*Porflio*/
 .portfolio {
     padding: 0px 86px;
     display: flex;
-   
+    justify-content: space-between;
+
 }
 
-.contenedor-portfolio{
-    padding: 30px;
+.contenedor-portfolio {
+    display: flex;
+    width: 1038px;
+    height: 709px;
     justify-content: center;
     align-items: center;
     align-content: center;
-    gap: 30px;
     flex-wrap: wrap;
-}
-.contenedor-portfolio div{
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     gap: 30px;
-    flex-wrap: wrap;
 }
+
 
 /*FIN MAIN*/
 
