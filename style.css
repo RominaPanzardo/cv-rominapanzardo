@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Archivo;
+    font-family: "Archivo", sans-serif;
     background-color: #FFF;
 }
 
@@ -36,7 +36,7 @@ nav ul {
 
 .botonera ul li a {
     color: #fff;
-    font-family: Archivo;
+    font-family: "Archivo", sans-serif;
     font-size: 24px;
     font-weight: 800;
     border-radius: 60px;
@@ -70,9 +70,7 @@ header #botones-contacto {
     justify-content: center;
 }
 
-header h1,
-h2,
-h3 {
+header h1,h2,h3 {
     font-weight: 400;
     line-height: normal;
 
@@ -84,8 +82,7 @@ h1 {
     font-size: 110px;
 }
 
-header h2,
-h3 {
+header h2,h3 {
     color: #FFF;
     font-family: "Bungee Hairline";
 }
@@ -99,7 +96,7 @@ FIN HEADER*/
 /*INICIO MAIN */
 
 main {
-    padding: 0px;
+    padding: 0px
 }
 
 /* SOBRE MI */
@@ -142,7 +139,7 @@ main h4, .información h5 {
 
 .información p {
     color: #434DAC;
-    font-family: Archivo;
+    font-family: "Archivo", sans-serif;
     font-size: 24px;
     font-style: normal;
     
@@ -157,27 +154,76 @@ main h4, .información h5 {
     padding: 0px 86px;
 }
  /* FIN HOBBIES */
-/* HOBBIES */
+/*SECTION ESTUDIOS/EXPERIENCIA*/
 
+.importante{
+   display: flex;
+   width: 100%;
+   height: auto;
+}
 
+.educacion, .experiencia{
+    border-radius: 60px;
+    border: 2px solid  #434DAC;
+    padding: 40px;
+    margin: 86px;
+}
 
+/*ARTICLE IDIOMAS*/
+.idiomas {
+    color: #fff;
+    background-color: #434DAC;
+    width: 792px;
+}
 
+.idiomas h3{
+    color: #fff;
+    padding: 40px;
+    margin: 0px;
+}
 
+.idiomas ul li {
+    padding: 14px 19px;
+    align-content: center;
+    gap: 38px;
+    border-radius: 60px;
+    border: 4px solid #FFF;
+}
 
-
-
-
-
-
-
-
-
+.idiomas ul{
+    height: 441px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ 
 
 /*FIN MAIN*/
 
 /*INICIO FOOTER*/
 
 /*FIN FOOTER*/
+
+/*TIPOGRAFIA Y COLOR*/
+h5 {
+    color: #EE6320;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+h6 {
+    color: #EE6320;
+    font-family: Archivo;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+p {
+    color: #434dac;
+}
+
+
 
 /*en figma está el boceto casi terminado del cv, dejé algunos comentarios ahí porque en secciones complejas tengo algunas dudas en como dividir correctamente las etiquetas.
 https://www.figma.com/file/WK1WXK7ULTz1zqrW1Tc6Rn/cv-rominapanzardo?type=design&node-id=1%3A93&mode=dev&t=drp8cNpvRlzo4oGo-1 */
