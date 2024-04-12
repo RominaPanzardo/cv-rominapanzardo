@@ -153,9 +153,8 @@ main h4,
     font-size: 24px;
     font-style: normal;
 
-}
+}/* FIN SOBRE MI */
 
-/* FIN SOBRE MI */
 /* HOBBIES */
 .hobbies {
     background-color: #D9703C;
@@ -163,11 +162,9 @@ main h4,
     justify-content: space-between;
     align-items: center;
     padding: 0px 86px;
-}
+}/* FIN HOBBIES */
 
-/* FIN HOBBIES */
 /*SECTION ESTUDIOS/EXPERIENCIA*/
-
 .importante {
     display: flex;
     width: 100%;
@@ -306,7 +303,7 @@ p {
     color: #434dac;
 }
 
-.herramientas h3,.herramientas h4 {
+.herramientas h3, .herramientas h4 {
     color: #FFF;
 }
 
