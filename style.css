@@ -1,36 +1,40 @@
 * {
     margin: 0px;
-    padding: 0px;
     list-style: none;
+    text-decoration: none;
 }
 
 body {
     font-family: Archivo;
-    color: #434DAC;
     background-color: #FFF;
 }
 
+/*INICIO HEADER */
 header {
     background-color: #434DAC;
     background-size: 100%;
+
 }
 
 nav ul {
-    padding: 30px 120px 30px; /*en lugar de un padding tan grande te va a convenir que la ul tenga un max-width, por ej 1600px, entonces va a crecer hasta cierto punto, pero sí le pondría un padding menor para que en pantallas más pequeñas no tengas un padding enorme pero tampoco esté pegado al borde, o algún tipo de justify */
+    padding: 30px 86px;
     width: 100%;
-    display: flex; /*me hace mal que el logo no esté centrado respecto a los demás botones, igual es por dos px pero con algún tipo de alineación al centro va a ir mejor*/
-    justify-content: space-between; 
+    display: flex;
+    justify-content: space-around;
+    max-width: 1600px;
+
 }
 
+/* BOTONERA*/
 .botonera {
-   /*al hacer scroll quedarian fijos en la pantalla de la pantalla.*/
-    background-color: #434dac; /*el padre (header) ya tiene este bg, no hace falta volver a aplicarlo acá, a menos que el color fuese distinto*/
-    height: 130px; /*para mi si le sacás la altura queda mucho más simétrico y con los paddings tiene un buen tamaño, no haría falta aplicarlo*/
+    /*al hacer scroll quedarian fijos en la pantalla de la pantalla.*/
+    background-color: #434dac;
     color: #fff;
     display: flex;
+
 }
 
-nav ul li {
+.botonera ul li a {
     color: #fff;
     font-family: Archivo;
     font-size: 24px;
@@ -38,47 +42,142 @@ nav ul li {
     border-radius: 60px;
     border: 1px solid #fff;
     padding: 20px 40px;
+    font-weight: 300;
+    text-decoration: none;
+    align-content: space-between;
 }
 
+.botonera ul li {
+    align-content: center;
+    }
+
+/* FIN BOTONERA*/
+
+/* PRESENTACION*/
 .presentación {
-    padding: 0 86px;
     display: flex;
-    width: 100%;
-    flex-direction: column;
+    justify-content: left;
 }
 
-h1,h2 {
-    font-size: 110px;
+header #titulos-presentación {
+    padding: 0px 86px;
+}
+
+header #botones-contacto {
+    /*al hacer scroll quedarian fijos en la pantalla de la pantalla.*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1,
+h2,
+h3 {
     font-weight: 400;
+    line-height: normal;
+
 }
 
 h1 {
     color: #D9703C;
     font-family: "Bungee", sans-serif;
+    font-size: 110px;
 }
 
-header h2,h3 {
+header h2,
+h3 {
     color: #FFF;
     font-family: "Bungee Hairline";
 }
 
-header h3 {
-    font-size: 50px;
+h2 {
+    font-size: 60px;
+}
+/* -FIN PRESENTACION-
+FIN HEADER*/
+
+/*INICIO MAIN */
+
+main {
+    padding: 0px;
+}
+
+/* SOBRE MI */
+.sobre-mi {
+    display: flex;
+    width: 100%;
+}
+
+.información {
+    width: 100%;
+    padding: 0px 86px;
+    flex-direction: column;
+}
+
+main h3 {
+    font-family: "Bungee Hairline";
+    font-size: 64px;
+
+}
+
+main h3,h4 {
+    color: #434DAC;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+main h4 {
+    font-size: 48px;
+}
+
+main h4, .información h5 {
+    font-family: "Bungee", sans-serif;}
+
+.información h5 {
+    color: #D9703C;
+    font-size: 20px;
     font-weight: 400;
 }
 
-header #botones-contacto { /*al hacer scroll quedarian fijos en la pantalla de la pantalla.*/
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
-} /*no pude resolver que esten alineados verticalmente a la mitad del header como en el boceto de figma*/
-
-main {
-    padding: 0 86px;
-    display: flex;
+.información p {
+    color: #434DAC;
+    font-family: Archivo;
+    font-size: 24px;
+    font-style: normal;
+    
 }
+/* FIN SOBRE MI */
+/* HOBBIES */
+.hobbies {
+    background-color: #D9703C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 86px;
+}
+ /* FIN HOBBIES */
+/* HOBBIES */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FIN MAIN*/
+
+/*INICIO FOOTER*/
+
+/*FIN FOOTER*/
 
 /*en figma está el boceto casi terminado del cv, dejé algunos comentarios ahí porque en secciones complejas tengo algunas dudas en como dividir correctamente las etiquetas.
 https://www.figma.com/file/WK1WXK7ULTz1zqrW1Tc6Rn/cv-rominapanzardo?type=design&node-id=1%3A93&mode=dev&t=drp8cNpvRlzo4oGo-1 */

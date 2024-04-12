@@ -10,93 +10,124 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Hairline&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
     <header>
         <nav class="botonera">
             <ul>
-                <img src="img/logo-blanco.png" alt="logo-blanco" width="85px" height="55px"> <!--en una ul solo pueden haber li, pero el li puede contener otras cosas-->
-                <li><a>Sobre mí</a></li> <!--te falta el href, si todavía no lo tenés al link se pone un # para indicar que está vacío-->
-                <li><a>Trabajos</a></li>
-                <li><a>Contacto</a></li>
+                <li id="imagenlogo"> <img src="img/logo-blanco.png" alt="logo-blanco" width="85px" height="55px"> </li>
+                <li><a href="#">Sobre mí</a></li>
+                <li><a href="#">Trabajos</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
 
-        <div class="presentación"> >
-            <!--tengo que resolver el tema de los espacios entre cajas de texto, en el boceto uso interlineas negativas en algunas partes y todavia no sé como hacerlo
-            RTA: con position relative podés encimar cosas, pero deberías hacer más divs para que te queden los títulos en una sola caja, aunque como detalle de diseño creo que no es la mejor desición de diseño porque se va a leer "romina diseñadora panzardo gráfica"-->
-            <h3>Hola, yo soy</h3>
-            <h1>Romina <br> Panzardo</h1>
-            <h2>Diseñadora <br> grafica jr</h2>
-        </div>
-        <div id="botones-contacto">
-            <!--no supe resolver estos botones como queria en el css , habia probado poner este div arriba del "div presentacion" y quedaban bien los botones pero quedaba un espacio entre los dos divs
-            RTA: te faltan más cajas, en esta instancia tenés un header con 3 hijos que se van a mostrar en horizontal o vertical según el flex que tengan, si necesitás agrupar yo incluiría este div en la presentación así tenés como padre a "presentación" y 4 hijos (h3 h1 h2 y botones-contacto) para hacer flex, pero si quisieras que los títulos estén en columna necesitarías más divisiones, o sea ( (título)(botones-contacto ) te dejé más notas en figma -->
-            <a href="mailto:rominapanzardo.dg@gmail.com" target="_blank"> <img src="img/boton-gmail-naranja.svg"
-                    alt="boton gmail" width="64px" height="64px"> </a>
-            <a href="https://www.behance.net/rominapanzardo" target="_blank"> <img src="img/boton-behance-naranja.svg"
-                    alt="boton behance" width="64px" height="64px"> </a>
-            <a href="https://www.linkedin.com/in/romina-panzardo-1b58732b6/" target="_blank"> <img
-                    src="img/boton-linkedin-naranja.svg" alt="boton linkedin" width="64px" height="64px"></a>
-        </div>
-    </header>
-    <!--FIN HEADER-->
-    <!--MAIN-->
-    <!--estaria bien esta forma de dejar comentarios para la entrega final? porque me sirve para no marearme tanto cuando trabajo
-    RTA: totalmente, estos sí dejalos, en css también son válidos-->
-    <main>
-        <section class="sobre-mi">
-            <article class="introduccion">
-                <h3>introducción</h4>
-                    <h4>Sobre mi</h4>
-                    <h5>— desde la Pasión hasta la Profesión</h5>
-                    <p>Mi aventura en el diseño comenzó mucho antes de que pudiera identificarla como tal. De niña, me
-                        encontraba profundamente inmersa en el mundo de las manualidades, creando con mis manos desde
-                        pequeñas manualidades con papel hasta complejos collages que contaban historias. La edición de
-                        fotos vino después, como un descubrimiento que amplió mi horizonte creativo.
+        <div class="presentación">
+            <div id="titulos-presentación">
+                <h3>Hola, yo soy</h3>
+                <h1>Romina <br> Panzardo</h1>
+                <h2>Diseñadora grafica jr</h2>
+            </div>
 
-                        Al estudiar diseño gráfico encuentro en cada proyecto una oportunidad para sumergirme en un
-                        nuevo desafíos, explorar diferentes perspectivas y perfeccionar mi habilidad para comunicar
-                        como tambien mis herramientas.</p> <!--que los textos queden en una sola línea-->
+            <div id="botones-contacto">
+                <a href="mailto:rominapanzardo.dg@gmail.com" target="_blank"> <img src="img/boton-gmail-naranja.svg"
+                        alt="boton gmail" width="64px" height="64px"> </a>
+                <a href="https://www.behance.net/rominapanzardo" target="_blank"> <img
+                        src="img/boton-behance-naranja.svg" alt="boton behance" width="64px" height="64px"> </a>
+                <a href="https://www.linkedin.com/in/romina-panzardo-1b58732b6/" target="_blank"> <img
+                        src="img/boton-linkedin-naranja.svg" alt="boton linkedin" width="64px" height="64px"></a>
+            </div>
+        </div>
+
+    </header> mi">
+            <article class="información">
+                <h3>introducción</h3>
+                <h4>Sobre mi</h4>
+                <h5>- desde la Pasión hasta la Profesión</h5>
+                <p>Mi aventura en el diseño comenzó mucho antes de que pudiera identificarla como tal. De niña, me
+                    encontraba profundamente inmersa en el mundo de las manualidades, creando con mis manos desde
+                    pequeñas manualidades con papel hasta complejos collages que contaban historias. La edición de fotos
+                    vino después, como un descubrimiento que amplió mi horizonte creativo. <br> Al estudiar diseño
+                    gráfico encuentro en cada proyecto una oportunidad para sumergirme en un nuevo desafíos,explorar
+                    diferentes perspectivas y perfeccionar mi habilidad para comunicar como tambien misherramientas.</p>
             </article>
-
-            </article class="imagen">
-            <img src="img/romina-byn.jpg" class="foto-cv" alt="foto cv romina" width="478px" height="478">
+            <article id="img-romina">
+                <img src="img/fotoromi.jpg" class="foto-cv" alt="foto cv romina" width="792px" height="984px">
+                </div>
             </article>
         </section>
 
-        <!--EXPERIENCIA-->
+        <section class="hobbies">
+            <article class="titulo">
+                <h4>Hobbies y gustos</h4>
+            </article>
+            <article> <img src="img/hobbie-camara.svg" alt=""></article>
+            <article><img src="img/hobbie-camara.svg" alt=""></article>
+            <article><img src="img/hobbie-camara.svg" alt=""></article>
+            <article><img src="img/hobbie-camara.svg" alt=""></article>
+            <article><img src="img/hobbie-camara.svg" alt=""></article>
 
-        <section>
-            <article id="Experiencia">
-                <h3> Experiencia laboral</h3>
+        </section>
+         <article id="parte
+        <section class="sobre-">
+            <div>
+                <div id="">
+                 <h3>Formación</h3>
+                    <h4>Académica</h4>
+                 <div>
+                 <h6>[2019-Actualidad]</h6>
+                  <h5>Licenciatura en Diseño y comunicación visual</h5>
+                  <p>Universidad Nacional de Lanus</p>
+                </div>
                 <div>
-                    <h5>[2023-Actualidad] </h5>
-                    <h4>Auxiliar de Cátedra en la materia Taller de Diseño 3</h4>
+                    <h6>[2012-2017]</h6>
+                    <h5>Bachiller en Economía y Administración de Empresas.</h5>
+                    <p>Colegio San Juan de la Cruz</p>
+                </div>
+            </div>
+
+        <section class="info academica"> 
+            
+        </section>
+        <article id="Estudios">
+            <h3> Formación</h3>
+            <h4>Académica</h4>
+            <div>
+                <h6>[2019-Actualidad]</h6>
+                <h5>Licenciatura en Diseño y comunicación visual</h5>
+                <p>Universidad Nacional de Lanus</p>
+            </div>
+
+            <div>
+                <h6>[2012-2017]</h6>
+                <h5>Bachiller en Economía y Administración de Empresas.</h5>
+                <p>Colegio San Juan de la Cruz</p>
+            </div>
+
+        </article>
+        <!--EXPERIENCIA-->
+         <article id="Experiencia">
+            <div>
+                <h3> Experiencia</h3>
+                <h4>laboral</h4>
+                <div class="auxiliar-unla">
+                    <h6>[2023-Actualidad] </h6>
+                    <h5>Auxiliar de Cátedra en la materia Taller de Diseño 3 y Taller de diseño 4</h4>
                     <p>Universidad Nacional de Lanús</p>
-                    </li>
                 </div>
-                <div>
-                    <h5>[2021-Actualidad]</h5>
-                    <h4>Emprendimiento personal</h4>
-                    <ul id="experiencia-emprendimiento">
-                        <li>Atención al cliente</li>
-                        <li>Diseño y maquetación de publicaciones digitales e impresas.</li>
-                        <li>Creación de diseños originales y atractivos para cuadros impresos.</li>
-                        <li>Digitalización y preparación para impresión</li>
-                    </ul>
+                <div class="emprendimiento">
+                    <h6>[2021-Actualidad]</h6>
+                    <h5>Emprendimiento personal</h4>
+                        <p> Atención al cliente, diseño y maquetación de archivos digitales e impresos,manejo de redes
+                            sociales, creación de publicaciones para redes, digitalización y preparación para impresión.
+                        </p>
+
                 </div>
-                <div>
-                    <h5>[2021-Actualidad]</h5>
-                    <h4>diseño grafico freelance</h4>
-                    <ul id="experiencia-freelance">
-                        <li>Diseño y desarrollo de marcas</li>
-                        <li>Creación de logotipos, folletos, banners y otros elementos gráficos</li>
-                        <li>Creación de diseños originales y atractivos para cuadros impresos.</li>
-                        <li> Desarrollo de identidades visuales para marcas</li>
-                    </ul>
+                <div class="experiencia-freelance">
+                    <h6>[2021-Actualidad]</h6>
+                    <h5>diseño grafico freelance</h5>
+                    <p>Diseño y desarrollo de marcas e identidades visuales, creación de logotipos, folletos, banners y otros elementos gráficos.</p>
                 </div>
             </article>
         </section>
@@ -104,16 +135,17 @@
         <!--ESTUDIOS-->
 
         <section id="Estudios">
-            <h3> Estudios</h3>
+            <h3> Formación</h3>
+            <h4>Académica</h4>
             <div>
-                <h5>[2019-Actualidad]</h5>
-                <h4>Licenciatura en Diseño y comunicación visual</h4>
+                <h6>[2019-Actualidad]</h6>
+                <h5>Licenciatura en Diseño y comunicación visual</h5>
                 <p>Universidad Nacional de Lanus</p>
             </div>
 
             <div>
-                <h5>[2012-2017]</h5>
-                <h4>Bachiller en Economía y Administración de Empresas.</h4>
+                <h6>[2012-2017]</h6>
+                <h5>Bachiller en Economía y Administración de Empresas.</h5>
                 <p>Colegio San Juan de la Cruz</p>
             </div>
 
@@ -121,7 +153,8 @@
 
         <section id="idiomas">
             <h3> Idiomas</h3>
-            <ul id=" lista-idiomas"> <!--aca tenia la duda si volverlo a nombrar RTA: no hace falta, podés llamarlo en css como #idiomas ul {}-->
+            <ul id=" lista-idiomas">
+                <!--aca tenia la duda si volverlo a nombrar RTA: no hace falta, podés llamarlo en css como #idiomas ul {}-->
                 <li>Español: Idioma nativo</li>
                 <li>Ingles: B2</li>
             </ul>
@@ -137,7 +170,7 @@
         </section>
 
     </main>
-
+<!--FIN MAIN-->
     <footer>
         <p id="parrafo-del-footer">Curriculum Vitae para Computación III</p>
         <p>Copyright© 2024. Todos los derechos reservados.</p>
