@@ -31,7 +31,6 @@ nav ul {
     background-color: #434dac;
     color: #fff;
     display: flex;
-
 }
 
 .botonera ul li a {
@@ -49,7 +48,7 @@ nav ul {
 
 .botonera ul li {
     align-content: center;
-    }
+}
 
 /* FIN BOTONERA*/
 
@@ -70,7 +69,9 @@ header #botones-contacto {
     justify-content: center;
 }
 
-header h1,h2,h3 {
+header h1,
+h2,
+h3 {
     font-weight: 400;
     line-height: normal;
 
@@ -82,14 +83,20 @@ h1 {
     font-size: 110px;
 }
 
-header h2,h3 {
+header h2,
+h3 {
     color: #FFF;
-    font-family: "Bungee Hairline";
+    font-family: "Bungee Hairline", sans-serif;
 }
 
 h2 {
     font-size: 60px;
 }
+
+header h3 {
+    font-size: 64px;
+}
+
 /* -FIN PRESENTACION-
 FIN HEADER*/
 
@@ -112,12 +119,13 @@ main {
 }
 
 main h3 {
-    font-family: "Bungee Hairline";
+    font-family: "Bungee Hairline", sans-serif;
     font-size: 64px;
 
 }
 
-main h3,h4 {
+main h3,
+h4 {
     color: #434DAC;
     font-style: normal;
     font-weight: 400;
@@ -128,8 +136,10 @@ main h4 {
     font-size: 48px;
 }
 
-main h4, .información h5 {
-    font-family: "Bungee", sans-serif;}
+main h4,
+.información h5 {
+    font-family: "Bungee", sans-serif;
+}
 
 .información h5 {
     color: #D9703C;
@@ -142,8 +152,9 @@ main h4, .información h5 {
     font-family: "Archivo", sans-serif;
     font-size: 24px;
     font-style: normal;
-    
+
 }
+
 /* FIN SOBRE MI */
 /* HOBBIES */
 .hobbies {
@@ -153,18 +164,20 @@ main h4, .información h5 {
     align-items: center;
     padding: 0px 86px;
 }
- /* FIN HOBBIES */
+
+/* FIN HOBBIES */
 /*SECTION ESTUDIOS/EXPERIENCIA*/
 
-.importante{
-   display: flex;
-   width: 100%;
-   height: auto;
+.importante {
+    display: flex;
+    width: 100%;
+    height: auto;
 }
 
-.educacion, .experiencia{
+.educacion,
+.experiencia {
     border-radius: 60px;
-    border: 2px solid  #434DAC;
+    border: 2px solid #434DAC;
     padding: 40px;
     margin: 86px;
 }
@@ -176,7 +189,7 @@ main h4, .información h5 {
     width: 792px;
 }
 
-.idiomas h3{
+.idiomas h3 {
     color: #fff;
     padding: 40px;
     margin: 0px;
@@ -187,16 +200,81 @@ main h4, .información h5 {
     align-content: center;
     gap: 38px;
     border-radius: 60px;
-    border: 4px solid #FFF;
+    border: 2px solid #FFF;
 }
 
-.idiomas ul{
+.idiomas ul {
     height: 441px;
     display: inline-flex;
     flex-direction: column;
     gap: 20px;
 }
- 
+
+/*HABILIDADES*/
+.habilidadesyskills {
+    margin: 0;
+    padding: 0px;
+    display: inline-flex;
+}
+
+.habilidadesyskills {
+    color: #FFF;
+    font-family: "Bungee Hairline", sans-serif;
+    font-size: 64px;
+}
+
+.herramientas {
+    background-color: #434DAC;
+    color: #fff;
+    display: flex;
+    width: 100%;
+}
+
+.adobe {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-adobe {
+    background-color: #FFF;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 9px;
+}
+
+/*FIN HABILIDADES-
+SKILLS*/
+.skills {
+    background-color: #D9703C;
+    height: auto;
+    width: 100%;
+}
+
+
+/*fin skills*/
+/*Porfolio*/
+.portfolio {
+    padding: 0px 86px;
+    display: flex;
+   
+}
+
+.contenedor-portfolio{
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.contenedor-portfolio div{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
 
 /*FIN MAIN*/
 
@@ -221,6 +299,11 @@ h6 {
 
 p {
     color: #434dac;
+}
+
+.herramientas h3,
+.herramientas h4 {
+    color: #FFF;
 }
 
 
