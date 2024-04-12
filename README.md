@@ -1,5 +1,7 @@
-Primeras pruebas de flexbox. Dejo algunas dudas en comentarios y cosas que no supe resolver.
+Algunas cosas las pude resolver y otras no llegué a ajustarlas del todo. Siento que me mareo mucho para poner las etiquetas en css teniendo tantas secciones, despues deberia ponerle atencion para ahorrarme algunas lineas y que no se repitan, por las dudas no quise tocar mucho eso todavia.
+Tambien tengo problemas con el indentado porque a veces visual desfasa los textos largos como quiere.
 ## Link de figma: 
  https://www.figma.com/file/WK1WXK7ULTz1zqrW1Tc6Rn/cv-rominapanzardo?type=design&node-id=1%3A93&mode=dev&t=drp8cNpvRlzo4oGo-1
  
-Ya tengo casi terminado el diseño en figma. Tambien hice un boceto pensando en como dividir las secciones para aplicar flexbox, dejé algunos comentarios ahí ya que en secciones complejas me cuesta un poco y tengo dudas sobre como usar correctamente las etiquetas.
+Todavia tengo dudas de si estan bien las divisiones, por ahora se ven bien en el visualizador pero no estoy segura si es la manera correcta.
+![image](https://github.com/RominaPanzardo/cv-rominapanzardo/assets/164932077/39954e39-7052-4a91-bfd9-950f6fe45e96)
