@@ -14,6 +14,7 @@ header {
     background-color: #434DAC;
     background-size: 100%;
     width: 100%;
+    justify-content: space-around;
 
 }
 
@@ -23,7 +24,6 @@ nav ul {
     display: flex;
     justify-content: space-around;
     max-width: 1600px;
-
 }
 
 /* BOTONERA*/
@@ -32,6 +32,11 @@ nav ul {
     background-color: #434dac;
     color: #fff;
     display: flex;
+}
+
+.botonera a:hover {
+    color: #434dac;
+    background-color: #ffffff;
 }
 
 .botonera ul li a {
@@ -54,21 +59,9 @@ nav ul {
 /* FIN BOTONERA*/
 
 /* PRESENTACION*/
-.presentación {
-    width: 100%;
-    display: flex;
-    justify-content: left;
-}
 
 header #titulos-presentación {
     padding: 0px 86px;
-}
-
-header #botones-contacto {
-    /*al hacer scroll quedarian fijos en la pantalla de la pantalla.*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 header h1,h2,h3 {
@@ -107,7 +100,7 @@ main {
 }
 
 /* SOBRE MI */
-.sobre-mi {
+#sobre-mi {
     display: flex;
     width: 100%;
 }
@@ -115,7 +108,6 @@ main {
 .información {
     width: 100%;
     padding: 0px 86px;
-    flex-direction: column;
 }
 
 main h3 {
@@ -254,7 +246,7 @@ main h4,
 SKILLS*/
 .skills {
     background-color: #D9703C;
-    height: auto;
+    width: 100%;
     width: 100%;
 }
 .skills ul li {
@@ -275,7 +267,7 @@ SKILLS*/
 
 .contenedor-portfolio {
     display: flex;
-    width: 1038px;
+    width: 100%;
     height: 709px;
     justify-content: center;
     align-items: center;
@@ -289,6 +281,18 @@ SKILLS*/
     border: 2px solid #434DAC;
 }
 
+/*Contacto*/
+#contacto{
+    width: 100%;
+    padding: 0px 86px;
+    display: flex;
+}
+
+#botones-contacto {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
 
 /*FIN MAIN*/
 

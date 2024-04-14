@@ -13,13 +13,13 @@
 </head>
 
 <body>
-    <header>
+    <header id="volver-arriba">
         <nav class="botonera">
             <ul>
                 <li id="imagenlogo"> <img src="img/logo-blanco.png" alt="logo-blanco" width="85px" height="55px"> </li>
-                <li><a href="#">Sobre mí</a></li>
-                <li><a href="#">Trabajos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="sobre-mi">Sobre mí</a></li>
+                <li><a href="portfolio">Trabajos</a></li>
+                <li><a href="contacto">Contacto</a></li>
             </ul>
         </nav>
 
@@ -29,21 +29,12 @@
                 <h1>Romina <br> Panzardo</h1>
                 <h2>Diseñadora grafica jr</h2>
             </div>
-
-            <div id="botones-contacto">
-                <a href="mailto:rominapanzardo.dg@gmail.com" target="_blank"> <img src="img/boton-gmail-naranja.svg"
-                        alt="boton gmail" width="64px" height="64px"> </a>
-                <a href="https://www.behance.net/rominapanzardo" target="_blank"> <img
-                        src="img/boton-behance-naranja.svg" alt="boton behance" width="64px" height="64px"> </a>
-                <a href="https://www.linkedin.com/in/romina-panzardo-1b58732b6/" target="_blank"> <img
-                        src="img/boton-linkedin-naranja.svg" alt="boton linkedin" width="64px" height="64px"></a>
-            </div>
         </div>
 
     </header>
     <main>
             <!--------------SECTION SOBRE MI----------->
-        <section class="sobre-mi">
+        <section id="sobre-mi">
             <article class="información">
                 <h3>introducción</h3>
                 <h4>Sobre mi</h4>
@@ -66,11 +57,12 @@
                 <h4>Hobbies y gustos</h4>
             </article>
             <!--puse las mismos iconos para simular el espacio total, todavia tengo que encontrar los demas-->
-            <article> <img src="img/hobbie-camara.svg" alt="hobbiefotografia"></article>
-            <article><img src="img/hobbie-camara.svg" alt="hobbie1"></article>
-            <article><img src="img/hobbie-camara.svg" alt="hobbie1"></article>
-            <article><img src="img/hobbie-camara.svg" alt="hobbie1"></article>
-            <article><img src="img/hobbie-camara.svg" alt="hobbie1"></article>
+            <article> <img src="img/hobbie-diseño.svg" alt="hobbie1"></article>
+            <article><img src="img/hobbie-camara.svg" alt="hobbie2"></article>
+            <article><img src="img/hobbie-peliculas.svg" alt="hobbie3"></article>
+            <article><img src="img/hobbie-dibujo.svg" alt="hobbie4"></article>
+            <article><img src="img/hobbie-cocinar.svg" alt="hobbie5"></article>
+            <article><img src="img/hobbie-juegos.svg" alt="hobbie6"></article>
         </section>
         <!------SECTION ESTUDIOS/EXPERIENCIA/IDIOMAS--------->
         <section class="importante">
@@ -129,6 +121,7 @@
             </article> <!--cierre article mayor-->
         </section>
         <!--FIN SECTION MAYOR-->
+        <!--SKILLS-->
         <section class="habilidadesyskills">
             <article class="skills">
                 <h3>Skills</h3>
@@ -193,14 +186,22 @@
                 </div>
             </article>
         </section>
-        <section>
+        <!--CONTACTO-->
+        <section id="contacto">
             <article>
                 <h4>Conectemos</h4>
                 <p>Estoy siempre en la búsqueda de nuevas colaboraciones y proyectos que desafíen mi creatividad y me permitan dejar una huella en el mundo del diseño. <br> Si estás interesado en trabajar juntos o quieres saber más sobre mi proceso y cómo puedo ayudar a dar vida a tus ideas, por favor, no dudes en contactarme..</p>
+                <div id="botones-contacto">
+                    <a href="mailto:rominapanzardo.dg@gmail.com" target="_blank"> <img src="img/boton-gmail-naranja.svg"
+                            alt="boton gmail" width="64px" height="64px"> </a>
+                    <a href="https://www.behance.net/rominapanzardo" target="_blank"> <img
+                            src="img/boton-behance-naranja.svg" alt="boton behance" width="64px" height="64px"> </a>
+                    <a href="https://www.linkedin.com/in/romina-panzardo-1b58732b6/" target="_blank"> <img
+                            src="img/boton-linkedin-naranja.svg" alt="boton linkedin" width="64px" height="64px"></a>
+                </div>
             </article>
         </section>
-
-
+        <a href="volver-arriba"> <p>Volver arriba</p></a>
     </main>
     <!--FIN MAIN-->
     <footer>
