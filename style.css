@@ -13,6 +13,7 @@ body {
 header {
     background-color: #434DAC;
     background-size: 100%;
+    width: 100%;
 
 }
 
@@ -54,6 +55,7 @@ nav ul {
 
 /* PRESENTACION*/
 .presentación {
+    width: 100%;
     display: flex;
     justify-content: left;
 }
@@ -69,9 +71,7 @@ header #botones-contacto {
     justify-content: center;
 }
 
-header h1,
-h2,
-h3 {
+header h1,h2,h3 {
     font-weight: 400;
     line-height: normal;
 
@@ -83,8 +83,7 @@ h1 {
     font-size: 110px;
 }
 
-header h2,
-h3 {
+header h2,h3 {
     color: #FFF;
     font-family: "Bungee Hairline", sans-serif;
 }
@@ -103,7 +102,8 @@ FIN HEADER*/
 /*INICIO MAIN */
 
 main {
-    padding: 0px
+    padding: 0px;
+    width: 100%;
 }
 
 /* SOBRE MI */
@@ -290,12 +290,22 @@ SKILLS*/
 }
 
 
-
-
 /*FIN MAIN*/
 
 /*INICIO FOOTER*/
+footer {
+    background-color: #434dac;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
 
+footer p, footer h4 {
+    color: #fff;
+
+}
 /*FIN FOOTER*/
 
 /*TIPOGRAFIA Y COLOR*/
