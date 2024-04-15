@@ -7,6 +7,7 @@
 body {
     font-family: "Archivo", sans-serif;
     background-color: #FFF;
+    cursor: url(img/cursor-blanco.png), auto;
 }
 
 /*INICIO HEADER */
@@ -64,7 +65,9 @@ header #titulos-presentación {
     padding: 0px 86px;
 }
 
-header h1,h2,h3 {
+header h1,
+h2,
+h3 {
     font-weight: 400;
     line-height: normal;
 
@@ -76,7 +79,8 @@ h1 {
     font-size: 110px;
 }
 
-header h2,h3 {
+header h2,
+h3 {
     color: #FFF;
     font-family: "Bungee Hairline", sans-serif;
 }
@@ -143,7 +147,9 @@ main h4,
     font-size: 24px;
     font-style: normal;
 
-}/* FIN SOBRE MI */
+}
+
+/* FIN SOBRE MI */
 
 /* HOBBIES */
 .hobbies {
@@ -152,7 +158,9 @@ main h4,
     justify-content: space-between;
     align-items: center;
     padding: 0px 86px;
-}/* FIN HOBBIES */
+}
+
+/* FIN HOBBIES */
 
 /*SECTION ESTUDIOS/EXPERIENCIA*/
 .importante {
@@ -195,7 +203,7 @@ main h4,
     display: inline-flex;
     flex-direction: column;
     gap: 20px;
-    
+
 }
 
 /*HABILIDADES*/
@@ -220,47 +228,43 @@ main h4,
 
 .adobeyoffice {
     display: flex;
+    align-content: space-between;
+
+}
+
+.adobe, .office {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contenedor-adobe, .contenedor-office {
+    background-color: #FFF;
     justify-content: center;
-
+    align-items: center;
+    align-content: center;
 }
-
-.adobe {
-    display: flex;
-}
-
-.contenedor-adobe {
-    background-color: #FFF;
-}
-
-.office {
-    display: flex;
-}
-
-.contenedor-office {
-    background-color: #FFF;
-}
-
 /*FIN HABILIDADES-
+
 SKILLS*/
 .skills {
     background-color: #D9703C;
+    padding: 0px 86px;
     width: 100%;
     width: 100%;
 }
+
 .skills ul li {
     font-family: "Archivo", sans-serif;
     font-size: 30px;
 }
-
-
-
 /*fin skills*/
+
 /*Porflio*/
 .portfolio {
     padding: 0px 86px;
     display: flex;
     justify-content: space-between;
-
 }
 
 .contenedor-portfolio {
@@ -280,7 +284,7 @@ SKILLS*/
 }
 
 /*Contacto*/
-#contacto{
+#contacto {
     width: 100%;
     padding: 0px 86px;
     display: flex;
@@ -304,10 +308,12 @@ footer {
     align-content: center;
 }
 
-footer p, footer h4 {
+footer p,
+footer h4 {
     color: #fff;
 
 }
+
 /*FIN FOOTER*/
 
 /*TIPOGRAFIA Y COLOR*/
@@ -329,11 +335,14 @@ p {
     color: #434dac;
 }
 
-.herramientas h3, .herramientas h4 {
+.herramientas h3,
+.herramientas h4 {
     color: #FFF;
 }
 
-
+span {
+    font-weight: 700;
+}
 
 /*en figma está el boceto casi terminado del cv, dejé algunos comentarios ahí porque en secciones complejas tengo algunas dudas en como dividir correctamente las etiquetas.
 https://www.figma.com/file/WK1WXK7ULTz1zqrW1Tc6Rn/cv-rominapanzardo?type=design&node-id=1%3A93&mode=dev&t=drp8cNpvRlzo4oGo-1 */
