@@ -8,13 +8,14 @@ body {
     font-family: "Archivo", sans-serif;
     background-color: #FFF;
     cursor: url(img/cursor-blanco.png), auto;
+    width: auto;
 }
 
 /*INICIO HEADER */
 header {
     background-color: #434DAC;
     background-size: 100%;
-    width: 100%;
+    width: auto;
     justify-content: space-around;
 
 }
@@ -30,7 +31,6 @@ nav ul {
 /* BOTONERA*/
 .botonera {
     /*al hacer scroll quedarian fijos en la pantalla de la pantalla.*/
-    background-color: #434dac;
     color: #fff;
     display: flex;
 }
@@ -178,19 +178,18 @@ main h4,
 }
 
 /*ARTICLE IDIOMAS*/
-.idiomas {
+.idiomas-skills {
+    width: auto;
     color: #fff;
     background-color: #434DAC;
-    width: 792px;
 }
 
-.idiomas h3 {
+#idiomas h3, #skills h3 {
     color: #fff;
-    padding: 40px;
-    margin: 0px;
+    padding: 0px 86px;
 }
 
-.idiomas ul li {
+#idiomas ul li {
     padding: 14px 19px;
     align-content: center;
     gap: 38px;
@@ -198,12 +197,16 @@ main h4,
     border: 2px solid #FFF;
 }
 
-.idiomas ul {
-    height: 441px;
+#idiomas ul {
     display: inline-flex;
     flex-direction: column;
     gap: 20px;
+    padding: 0px 86px;
 
+}
+
+#skills ul li{
+    padding: 0px 86px;
 }
 
 /*HABILIDADES*/
@@ -216,9 +219,10 @@ main h4,
 .habilidadesyskills {
     color: #FFF;
     font-family: "Bungee Hairline", sans-serif;
-    font-size: 64px;
+    font-size:30px;
 }
 
+/*herramientas*/
 .herramientas {
     padding: 0px 86px;
     background-color: #434DAC;
@@ -244,20 +248,15 @@ main h4,
     align-items: center;
     align-content: center;
 }
-/*FIN HABILIDADES-
 
-SKILLS*/
-.skills {
+.habilidades {
     background-color: #D9703C;
     padding: 0px 86px;
     width: 100%;
     width: 100%;
 }
 
-.skills ul li {
-    font-family: "Archivo", sans-serif;
-    font-size: 30px;
-}
+
 /*fin skills*/
 
 /*Porflio*/
@@ -285,6 +284,7 @@ SKILLS*/
 
 /*Contacto*/
 #contacto {
+    background-color: #D9703C;
     width: 100%;
     padding: 0px 86px;
     display: flex;
@@ -300,6 +300,7 @@ SKILLS*/
 
 /*INICIO FOOTER*/
 footer {
+    padding: 20px;
     background-color: #434dac;
     color: #fff;
     display: flex;
