@@ -1,4 +1,4 @@
-Algunas cosas las pude resolver y otras no llegué a ajustarlas del todo. Siento que me mareo mucho para poner las etiquetas en css teniendo tantas secciones, despues deberia ponerle atencion para ahorrarme algunas lineas y que no se repitan, por las dudas no quise tocar mucho eso todavia.
+Algunas cosas las pude resolver y otras no llegué a ajustarlas del todo.  deberia ponerle atencion para ahorrarme algunas lineas en css y que no se repitan, por las dudas no quise tocar mucho eso todavia.
 Tambien tengo problemas con el indentado porque a veces visual desfasa los textos largos como quiere.
 ## Link de figma: 
  https://www.figma.com/file/WK1WXK7ULTz1zqrW1Tc6Rn/cv-rominapanzardo?type=design&node-id=1%3A93&mode=dev&t=drp8cNpvRlzo4oGo-1
