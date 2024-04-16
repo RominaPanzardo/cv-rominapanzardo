@@ -14,10 +14,8 @@ body {
 /*INICIO HEADER */
 header {
     background-color: #434DAC;
-    background-size: 100%;
-    width: auto;
-    justify-content: space-around;
-
+    display: flex;
+    flex-direction: column;
 }
 
 nav ul {
@@ -60,16 +58,15 @@ nav ul {
 /* FIN BOTONERA*/
 
 /* PRESENTACION*/
-
+.presentación{
+    padding: 180px 0px;
+}
 header #titulos-presentación {
-    padding: 0px 86px;
+    padding: 0 86px;
 }
 
-header h1,
-h2,
-h3 {
+header h1,h2,h3 {
     font-weight: 400;
-    line-height: normal;
 
 }
 
@@ -77,6 +74,7 @@ h1 {
     color: #D9703C;
     font-family: "Bungee", sans-serif;
     font-size: 110px;
+    line-height: 120px;
 }
 
 header h2,
@@ -85,12 +83,16 @@ h3 {
     font-family: "Bungee Hairline", sans-serif;
 }
 
+
 h2 {
     font-size: 60px;
+    line-height: 50px;
+    
 }
 
 header h3 {
     font-size: 64px;
+    line-height: 50px;
 }
 
 /* -FIN PRESENTACION-
@@ -123,7 +125,8 @@ h4 {
     color: #434DAC;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 90px;
+    
 }
 
 main h4 {
@@ -133,6 +136,7 @@ main h4 {
 main h4,
 .información h5 {
     font-family: "Bungee", sans-serif;
+    line-height: 55px;
 }
 
 .información h5 {
@@ -145,7 +149,6 @@ main h4,
     color: #434DAC;
     font-family: "Archivo", sans-serif;
     font-size: 24px;
-    font-style: normal;
 
 }
 
@@ -157,7 +160,7 @@ main h4,
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 86px;
+    padding: 30px 86px;
 }
 
 /* FIN HOBBIES */
@@ -165,8 +168,6 @@ main h4,
 /*SECTION ESTUDIOS/EXPERIENCIA*/
 .importante {
     display: flex;
-    width: 100%;
-    height: auto;
 }
 
 .educacion,
@@ -174,14 +175,17 @@ main h4,
     border-radius: 60px;
     border: 2px solid #434DAC;
     padding: 40px;
-    margin: 86px;
+    margin: 40px;
+
 }
 
 /*ARTICLE IDIOMAS*/
 .idiomas-skills {
-    width: auto;
     color: #fff;
     background-color: #434DAC;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 #idiomas h3, #skills h3 {
@@ -206,7 +210,10 @@ main h4,
 }
 
 #skills ul li{
-    padding: 0px 86px;
+    padding: 0px 48px;
+    font-size: 20px;
+    line-height: 30px;
+
 }
 
 /*HABILIDADES*/
@@ -224,7 +231,7 @@ main h4,
 
 /*herramientas*/
 .herramientas {
-    padding: 0px 86px;
+    padding: 40px 86px;
     background-color: #434DAC;
     color: #fff;
     width: 100%;
@@ -251,33 +258,34 @@ main h4,
 
 .habilidades {
     background-color: #D9703C;
-    padding: 0px 86px;
+    padding: 40px 86px;
     width: 100%;
-    width: 100%;
+}
+.habilidades ul{
+    padding: 0px;
 }
 
 
 /*fin skills*/
 
 /*Porflio*/
-.portfolio {
+#portfolio {
     padding: 0px 86px;
     display: flex;
-    justify-content: space-between;
+    height: 90vh;
+    align-items: center;
 }
 
 .contenedor-portfolio {
     display: flex;
-    width: 100%;
-    height: 709px;
+    padding: 30px;
     justify-content: center;
-    align-items: center;
     align-content: center;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.portfolio article img {
+#portfolio article img {
     border-radius: 60px;
     border: 2px solid #434DAC;
 }
@@ -285,22 +293,36 @@ main h4,
 /*Contacto*/
 #contacto {
     background-color: #D9703C;
-    width: 100%;
-    padding: 0px 86px;
+    padding: 40px 86px;
     display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    
 }
 
 #botones-contacto {
     display: flex;
     justify-content: center;
     padding: 20px;
+    gap: 30px;
+}
+#botones-contacto a {
+    background-color: #D9703C;
+    border-radius:50%;
+    border:2px solid#FFF;
+}
+
+#botones-contacto a:hover{
+    background-color: #434dac;
+    border:2px solid#FFF;
+    border-radius: 50%;
 }
 
 /*FIN MAIN*/
 
 /*INICIO FOOTER*/
 footer {
-    padding: 20px;
+    padding: 20px 86px;
     background-color: #434dac;
     color: #fff;
     display: flex;
@@ -312,6 +334,7 @@ footer {
 footer p,
 footer h4 {
     color: #fff;
+    
 
 }
 
@@ -330,10 +353,12 @@ h6 {
     font-family: Archivo;
     font-size: 15px;
     font-weight: 400;
+    line-height: 25px;
 }
 
 p {
     color: #434dac;
+    line-height: 25px;
 }
 
 .herramientas h3,
