@@ -2,13 +2,12 @@
     margin: 0px;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 body {
     font-family: "Archivo", sans-serif;
-    background-color: #FFF;
     cursor: url(img/cursor-blanco.png), auto;
-    width: auto;
 }
 
 /*INICIO HEADER */
@@ -16,6 +15,19 @@ header {
     background-color: #434DAC;
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    box-sizing: border-box;
+    
+}
+
+nav{
+    width: 100%;
+} 
+
+.presentación{
+    padding: 0px 86px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 nav ul {
@@ -23,16 +35,9 @@ nav ul {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    max-width: 1600px;
 }
 
 /* BOTONERA*/
-.botonera {
-    /*al hacer scroll quedarian fijos en la pantalla de la pantalla.*/
-    color: #fff;
-    display: flex;
-}
-
 .botonera a:hover {
     color: #434dac;
     background-color: #ffffff;
@@ -52,15 +57,14 @@ nav ul {
 }
 
 .botonera ul li {
-    align-content: center;
+    display: flex;
+    align-items: stretch;
+
 }
 
 /* FIN BOTONERA*/
 
 /* PRESENTACION*/
-.presentación{
-    padding: 180px 0px;
-}
 header #titulos-presentación {
     padding: 0 86px;
 }
@@ -73,45 +77,53 @@ header h1,h2,h3 {
 h1 {
     color: #D9703C;
     font-family: "Bungee", sans-serif;
-    font-size: 110px;
-    line-height: 120px;
+    font-size: 160px;
+    line-height: 170px;
 }
 
-header h2,
-h3 {
+header h2,h3 {
     color: #FFF;
     font-family: "Bungee Hairline", sans-serif;
 }
 
 
 h2 {
-    font-size: 60px;
-    line-height: 50px;
+    font-size: 65px;
+    line-height: 90px;
+    font-weight: 800;
     
 }
 
 header h3 {
-    font-size: 64px;
-    line-height: 50px;
+    font-size: 50px;
+    line-height: 90px;
+}
+
+article .img-romina {
+    background-image: url(img/fotoazul-romina.png);
 }
 
 /* -FIN PRESENTACION-
 FIN HEADER*/
 
 /*INICIO MAIN */
-main {
-    padding: 0px;
-    width: 100%;
-}
-
 /* SOBRE MI */
 #sobre-mi {
     display: flex;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .información {
     padding: 0px 86px;
+}
+
+#img-romina{
+        background-image: url('img/fotoromi.jpg');
+        background-size: cover;
+        background-position: center;
+        width:100%;
+        height: 100vh;
 }
 
 main h3 {
@@ -126,15 +138,13 @@ h4 {
     font-style: normal;
     font-weight: 400;
     line-height: 90px;
-    
 }
 
 main h4 {
     font-size: 48px;
 }
 
-main h4,
-.información h5 {
+main h4, .información h5 {
     font-family: "Bungee", sans-serif;
     line-height: 55px;
 }
@@ -318,23 +328,32 @@ main h4,
     border-radius: 50%;
 }
 
+/*flecha arriba*/
+.flecha-arriba
+ {
+    position: fixed;
+    right: 20px;
+    bottom:20px;
+    z-index:1000;
+}
+
+
 /*FIN MAIN*/
+
+
 
 /*INICIO FOOTER*/
 footer {
     padding: 20px 86px;
     background-color: #434dac;
-    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-content: center;
 }
 
-footer p,
-footer h4 {
+footer p, footer h4 {
     color: #fff;
-    
 
 }
 
