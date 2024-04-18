@@ -62,6 +62,13 @@ nav ul {
 
 }
 
+header p {
+    color: #FFF;
+    font-family: "Archivo", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 /* FIN BOTONERA*/
 
 /* PRESENTACION*/
