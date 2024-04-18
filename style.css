@@ -166,7 +166,7 @@ main h4, .información h5 {
     color: #434DAC;
     font-family: "Archivo", sans-serif;
     font-size: 24px;
-
+    max-width: 1500px;
 }
 
 /* FIN SOBRE MI */
@@ -355,8 +355,6 @@ footer {
     background-color: #434dac;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    align-content: center;
 }
 
 footer p, footer h4 {
