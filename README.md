@@ -14,19 +14,18 @@ Contiene la navegación principal de la página, incluyendo enlaces a diferentes
 ### **Main:**  
 abarca el contenido principal dividido en diferentes secciones, entre ellas:
 
--Sobre mi: Descripción personal y trayectoria profesional.
--Hobbies: Enumera intereses y gustos, acompañados de iconos ilustrativos.
--Educación y experiencia: Se presenta información académica y experiencia laboral  
--Habilidades y skills: Se enumerar habilidades blandas como técnicas  
+-Sobre mi: Descripción personal y trayectoria profesional.  
+-Hobbies: Enumera intereses y gustos, acompañados de iconos ilustrativos.  
+-Educación y experiencia: Se presenta información académica y experiencia laboral    
+-Idiomas y Habilidades: Se enumeran idiomas y habilidades técnicas de diseño 
 -Portafolio: Sección que muestra algunos trabajos destacados.  
--Contacto: Invita a los visitantes a conectarse y proporciona enlaces a diferentes redes sociales y dirección de correo electrónico.  
+-Contacto: Invita a los visitantes a conectarse y proporciona enlaces a diferentes redes sociales y dirección de correo electrónico.
 
 ### **Footer:**  
 Incluye información de copyright y agradecimientos.
 
-##Experiencia
-En esta primera oportunidad de usar Flexbox estoy conforme con mi entrega porque pude resolver y aproximarme bastante al diseño propuesto en Figma.
+## Experiencia  
+Estoy bastante conforme con mi trabajo para ser la primera vez usando HTML y CSS, ya que pude resolver y aproximarme bastante al diseño propuesto en Figma, además lo disfruté y me despertó interés de seguir profundizando y aprendiendo sobre el tema.
 
 ## Link de figma: 
-https://www.figma.com/file/WK1WXK7ULTz1zqrW1Tc6Rn/cv-rominapanzardo?type=design&node-id=207%3A161&mode=design&t=hR3AcZTipFHYxEkp-1
-
+https://www.figma.com/file/WK1WXK7ULTz1zqrW1Tc6Rn/cv-rominapanzardo?type=design&node-id=0%3A1&mode=design&t=buYN3LCgthYCyJMS-1
