@@ -2,37 +2,32 @@
     margin: 0px;
     list-style: none;
     text-decoration: none;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: "Archivo", sans-serif;
     cursor: url(img/cursor-blanco.png), auto;
+    font-family: "Archivo", sans-serif;
 }
 
 /*INICIO HEADER */
 header {
-    background-color: #434DAC;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    box-sizing: border-box;
-    
 }
 
-nav{
-    width: 100%;
-} 
+header p {
+    font-size: 1rem;
+    font-weight: 400;
+}
 
 .presentación{
-    padding: 0px 86px;
     margin-top: auto;
     margin-bottom: auto;
 }
 
 nav ul {
     padding: 30px 86px;
-    width: 100%;
     display: flex;
     justify-content: space-around;
 }
@@ -44,65 +39,36 @@ nav ul {
 }
 
 .botonera ul li a {
-    color: #fff;
-    font-family: "Archivo", sans-serif;
-    font-size: 24px;
-    font-weight: 800;
+    font-size: 1.5rem;
     border-radius: 60px;
-    border: 1px solid #fff;
     padding: 20px 40px;
-    font-weight: 300;
-    text-decoration: none;
-    align-content: space-between;
+    cursor: url(img/cursor-mano.png), auto;
+    
+    
 }
 
 .botonera ul li {
     display: flex;
-    align-items: stretch;
-
 }
-
-header p {
-    color: #FFF;
-    font-family: "Archivo", sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-}
-
 /* FIN BOTONERA*/
-
 /* PRESENTACION*/
-header #titulos-presentación {
-    padding: 0 86px;
-}
-
 header h1,h2,h3 {
     font-weight: 400;
-
 }
 
 h1 {
-    color: #D9703C;
-    font-family: "Bungee", sans-serif;
-    font-size: 160px;
+    font-size: 10rem;
     line-height: 170px;
 }
 
-header h2,h3 {
-    color: #FFF;
-    font-family: "Bungee Hairline", sans-serif;
-}
-
-
 h2 {
-    font-size: 65px;
+    font-size: 4rem;
     line-height: 90px;
     font-weight: 800;
-    
 }
 
 header h3 {
-    font-size: 50px;
+    font-size: 3rem;
     line-height: 90px;
 }
 
@@ -110,8 +76,7 @@ article .img-romina {
     background-image: url(img/fotoazul-romina.png);
 }
 
-/* -FIN PRESENTACION-
-FIN HEADER*/
+/* -FIN PRESENTACION-FIN HEADER*/
 
 /*INICIO MAIN */
 /* SOBRE MI */
@@ -121,65 +86,62 @@ FIN HEADER*/
     align-items: center;
 }
 
-.información {
-    padding: 0px 86px;
-}
-
 #img-romina{
-        background-image: url('img/fotoromi.jpg');
-        background-size: cover;
-        background-position: center;
-        width:100%;
-        height: 100vh;
+    background-image: url('img/fotoromi.jpg');
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height: 100vh;
 }
 
 main h3 {
-    font-family: "Bungee Hairline", sans-serif;
-    font-size: 64px;
-
+    font-size: 4rem;
 }
 
-main h3,
-h4 {
-    color: #434DAC;
-    font-style: normal;
-    font-weight: 400;
+main h3 {
     line-height: 90px;
 }
 
 main h4 {
-    font-size: 48px;
+    line-height: 30px;
+    padding-bottom: 20px;
 }
 
-main h4, .información h5 {
-    font-family: "Bungee", sans-serif;
-    line-height: 55px;
-}
 
-.información h5 {
-    color: #D9703C;
-    font-size: 20px;
-    font-weight: 400;
+.información p, h5, h6,.información h5 {
+    font-size: 1.5rem;
 }
 
 .información p {
-    color: #434DAC;
-    font-family: "Archivo", sans-serif;
-    font-size: 24px;
-    max-width: 1500px;
+    max-width: 1800px;
 }
 
+main h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-weight: 800;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 25px;
+}
 /* FIN SOBRE MI */
 
 /* HOBBIES */
 .hobbies {
-    background-color: #D9703C;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 86px;
 }
 
+.hobbies h4, .contacto h4{
+    padding: 0px;
+}
 /* FIN HOBBIES */
 
 /*SECTION ESTUDIOS/EXPERIENCIA*/
@@ -187,101 +149,79 @@ main h4, .información h5 {
     display: flex;
 }
 
-.educacion,
-.experiencia {
-    border-radius: 60px;
-    border: 2px solid #434DAC;
-    padding: 40px;
-    margin: 40px;
-
+.educacion,.experiencia {
+    padding: 40px 40px 20px;
+    margin: 40px 86px;
 }
 
+.experiencia div, .educacion div {
+    padding-bottom: 20px;
+}
 /*ARTICLE IDIOMAS*/
 .idiomas-skills {
-    color: #fff;
-    background-color: #434DAC;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-#idiomas h3, #skills h3 {
-    color: #fff;
-    padding: 0px 86px;
-}
-
 #idiomas ul li {
     padding: 14px 19px;
     align-content: center;
-    gap: 38px;
-    border-radius: 60px;
-    border: 2px solid #FFF;
+    gap: 30px;
 }
 
 #idiomas ul {
     display: inline-flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 0px 86px;
+    gap: 30px;
 
 }
 
 #skills ul li{
     padding: 0px 48px;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 30px;
-
 }
 
 /*HABILIDADES*/
 .habilidadesyskills {
-    margin: 0;
-    padding: 0px;
     display: flex;
-}
-
-.habilidadesyskills {
-    color: #FFF;
-    font-family: "Bungee Hairline", sans-serif;
-    font-size:30px;
+    font-size:1.8rem;
 }
 
 /*herramientas*/
-.herramientas {
+.software {
     padding: 40px 86px;
-    background-color: #434DAC;
-    color: #fff;
     width: 100%;
 }
 
 .adobeyoffice {
     display: flex;
-    align-content: space-between;
+    gap:20px ;
 
 }
 
 .adobe, .office {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 160px;
+    gap: 20px;
 }
 
 .contenedor-adobe, .contenedor-office {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     background-color: #FFF;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
 }
 
 .habilidades {
-    background-color: #D9703C;
     padding: 40px 86px;
     width: 100%;
 }
-.habilidades ul{
+.habilidades ul {
     padding: 0px;
 }
-
 
 /*fin skills*/
 
@@ -289,34 +229,32 @@ main h4, .información h5 {
 #portfolio {
     padding: 0px 86px;
     display: flex;
-    height: 90vh;
     align-items: center;
+    justify-content: space-between;
 }
 
 .contenedor-portfolio {
     display: flex;
-    padding: 30px;
+    padding: 60px 0px;
     justify-content: center;
-    align-content: center;
     flex-wrap: wrap;
     gap: 30px;
-}
-
-#portfolio article img {
-    border-radius: 60px;
-    border: 2px solid #434DAC;
+    max-width: 950px;
 }
 
 /*Contacto*/
 #contacto {
-    background-color: #D9703C;
     padding: 40px 86px;
     display: flex;
-    box-sizing: border-box;
-    justify-content: center;
-    
+    gap: 30px;
 }
 
+#contenedor-contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
 #botones-contacto {
     display: flex;
     justify-content: center;
@@ -324,75 +262,80 @@ main h4, .información h5 {
     gap: 30px;
 }
 #botones-contacto a {
-    background-color: #D9703C;
-    border-radius:50%;
-    border:2px solid#FFF;
+    cursor: url(img/cursor-mano.png), auto;
 }
 
-#botones-contacto a:hover{
-    background-color: #434dac;
-    border:2px solid#FFF;
+#botones-contacto a,#botones-contacto a:hover{
     border-radius: 50%;
 }
 
 /*flecha arriba*/
-.flecha-arriba
- {
+.flecha-arriba{
     position: fixed;
     right: 20px;
     bottom:20px;
     z-index:1000;
 }
-
-
 /*FIN MAIN*/
-
-
-
 /*INICIO FOOTER*/
 footer {
     padding: 20px 86px;
-    background-color: #434dac;
     display: flex;
     justify-content: space-between;
 }
 
-footer p, footer h4 {
+/*COLORES FONDO*/
+.hobbies,.habilidades,#botones-contacto a,#contacto { /*fondo naranja*/
+    background-color: #D9703C;
+}
+
+header,#botones-contacto a:hover, footer, .herramientas,.idiomas-skills,.software { /*fondo azul*/
+    background-color: #434dac;
+}
+/*COLORES TIPOGRAFIA*/
+.botonera ul li a, header p, header h2,h3,.idiomas-skills,#idiomas h3, #skills h3,.habilidadesyskills,.software h3,.software h4,footer p, footer h4, .office h6, .adobe h6 {
     color: #fff;
+}/*tipografia en blanco*/
 
-}
-
-/*FIN FOOTER*/
-
-/*TIPOGRAFIA Y COLOR*/
-h5 {
-    color: #EE6320;
-    font-family: "Archivo Black", sans-serif;
-    font-size: 20px;
-    font-weight: 800;
-}
-
-h6 {
-    color: #EE6320;
-    font-family: Archivo;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 25px;
-}
-
-p {
+p,.información p,main h3,h4 {
     color: #434dac;
-    line-height: 25px;
+} /* tipografia azul*/
+
+h1,h5,h6,.información h5  {
+    color: #D9703C;
+} /*tipografia naranja*/
+
+/*BORDES*/
+#botones-contacto a:hover, #botones-contacto a, #idiomas ul li, .botonera ul li a { 
+    border:2px solid#FFF;
+} /*borde blanco*/
+
+.educacion,.experiencia, #idiomas ul li,#portfolio article img {
+    border-radius: 60px;
+}/*border radius 60*/
+
+.educacion,.experiencia,#portfolio article img  {
+    border: 2px solid #434DAC;
+} /*borde azul*/
+
+/*FUENTES*/
+header h2,h3,main h3,.habilidadesyskills { /*Bungee Hairline*/
+    font-family: "Bungee Hairline", sans-serif;
 }
 
-.herramientas h3,
-.herramientas h4 {
-    color: #FFF;
+h1,h4,.información h5 {
+    font-family: "Bungee", sans-serif;/*Bungee*/
+}
+
+body,h5,header p, h6,.información p { /*Archivo sans*/
+    font-family: "Archivo", sans-serif;
 }
 
 span {
     font-weight: 700;
-}
+} 
 
-/*en figma está el boceto casi terminado del cv, dejé algunos comentarios ahí porque en secciones complejas tengo algunas dudas en como dividir correctamente las etiquetas.
-https://www.figma.com/file/WK1WXK7ULTz1zqrW1Tc6Rn/cv-rominapanzardo?type=design&node-id=1%3A93&mode=dev&t=drp8cNpvRlzo4oGo-1 */
+/*PADDING*/
+.información,header #titulos-presentación,#idiomas h3, #skills h3,#idiomas ul,.presentación {
+    padding: 0px 86px;
+} /*padding general*/
