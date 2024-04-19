@@ -294,7 +294,7 @@ header,#botones-contacto a:hover,footer,.herramientas,.idiomas-skills,.software 
 } /*fondo azul*/
 
 /*COLORES TIPOGRAFIA*/
-.botonera ul li a,header p,header h2,h3,.idiomas-skills,.software h3,.software h4,footer p,footer h4,.office h6,.adobe h6,.idiomas-skills h4 {
+.botonera ul li a,header p,header h2,header h3,h3,.idiomas-skills,.software h3,.software h4,footer p,footer h4,.office h6,.adobe h6,.idiomas-skills h4 {
     color: #fff;
 }/*tipografia en blanco*/
 
