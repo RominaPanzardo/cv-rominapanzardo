@@ -8,10 +8,11 @@ El editor de código utilizado fue Visual Studio Code.
 Se buscó estructurar el currículum web en diferentes secciones para garantizar una navegación clara y accesible a través de la barra de navegación en el header que ofrece botones que permiten moverse fácilmente entre las diferentes secciones. 
 Además se incluye un botón fijo en forma de flecha para facilitar el retorno al inicio de página, sin necesidad de desplazarse manualmente hacia arriba. 
 
-**Header:**  
-Contiene la navegación principal de la página, incluyendo enlaces a diferentes secciones como "Sobre mí", "Trabajos" y "Contacto". También incluye un logotipo y una sección de presentación con mi nombre y título profesional.
+### **Header:**  
+Contiene la navegación principal de la página, incluyendo enlaces a diferentes secciones como "Sobre mí", "Portfolio" y "Contacto". También incluye un logotipo y una sección de presentación con mi nombre y título profesional.
 
-**Main:** abarca el contenido principal dividido en diferentes secciones, entre ellas:
+### **Main:**  
+abarca el contenido principal dividido en diferentes secciones, entre ellas:
 
 -Sobre mi: Descripción personal y trayectoria profesional.
 -Hobbies: Enumera intereses y gustos, acompañados de iconos ilustrativos.
@@ -20,7 +21,8 @@ Contiene la navegación principal de la página, incluyendo enlaces a diferentes
 -Portafolio: Sección que muestra algunos trabajos destacados.  
 -Contacto: Invita a los visitantes a conectarse y proporciona enlaces a diferentes redes sociales y dirección de correo electrónico.  
 
-**Footer:** Incluye información de copyright y agradecimientos.
+### **Footer:**  
+Incluye información de copyright y agradecimientos.
 
 ##Experiencia
 En esta primera oportunidad de usar Flexbox estoy conforme con mi entrega porque pude resolver y aproximarme bastante al diseño propuesto en Figma.
