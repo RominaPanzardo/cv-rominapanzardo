@@ -6,7 +6,10 @@
 
 body {
     cursor: url(img/cursor-blanco.png), auto;
-    font-family: "Archivo", sans-serif;
+}
+
+#botones-contacto a, .botonera ul li a  {
+    cursor: url(img/cursor-mano.png), auto;
 }
 
 /*INICIO HEADER */
@@ -17,11 +20,11 @@ header {
 }
 
 header p {
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 400;
 }
 
-.presentación{
+.presentación {
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -39,12 +42,9 @@ nav ul {
 }
 
 .botonera ul li a {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     border-radius: 60px;
     padding: 20px 40px;
-    cursor: url(img/cursor-mano.png), auto;
-    
-    
 }
 
 .botonera ul li {
@@ -57,18 +57,18 @@ header h1,h2,h3 {
 }
 
 h1 {
-    font-size: 10rem;
+    font-size: 10em;
     line-height: 170px;
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 4em;
     line-height: 90px;
     font-weight: 800;
 }
 
 header h3 {
-    font-size: 3rem;
+    font-size: 3em;
     line-height: 90px;
 }
 
@@ -76,9 +76,8 @@ article .img-romina {
     background-image: url(img/fotoazul-romina.png);
 }
 
-/* -FIN PRESENTACION-FIN HEADER*/
+/* -FIN PRESENTACION /FIN HEADER*/
 
-/*INICIO MAIN */
 /* SOBRE MI */
 #sobre-mi {
     display: flex;
@@ -86,19 +85,16 @@ article .img-romina {
     align-items: center;
 }
 
-#img-romina{
+#img-romina {
     background-image: url('img/fotoromi.jpg');
     background-size: cover;
     background-position: center;
-    width:100%;
+    width: 100%;
     height: 100vh;
 }
 
 main h3 {
-    font-size: 4rem;
-}
-
-main h3 {
+    font-size: 4em;
     line-height: 90px;
 }
 
@@ -108,16 +104,16 @@ main h4 {
 }
 
 
-.información p, h5, h6,.información h5 {
-    font-size: 1.5rem;
+.información p,h5,h6,.información h5 {
+    font-size: 1.5em;
 }
 
 .información p {
     max-width: 1800px;
 }
 
-main h4 {
-    font-size: 2rem;
+main h4{
+    font-size: 2.15em;
 }
 
 h5 {
@@ -125,10 +121,11 @@ h5 {
 }
 
 h6 {
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 400;
     line-height: 25px;
 }
+
 /* FIN SOBRE MI */
 
 /* HOBBIES */
@@ -139,14 +136,43 @@ h6 {
     padding: 30px 86px;
 }
 
-.hobbies h4, .contacto h4{
-    padding: 0px;
-}
-/* FIN HOBBIES */
-
-/*SECTION ESTUDIOS/EXPERIENCIA*/
+/*SECTION GRANDE*/
 .importante {
     display: flex;
+}
+
+/* IDIOMAS*/
+.idiomas-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+#idiomas ul li {
+    padding: 14px 19px;
+    align-content: center;
+}
+
+#idiomas ul {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/*habilidades*/
+.habilidadesyskills {
+    display: flex;
+}
+.habilidades ul, #idiomas ul {
+    padding: 0px;
+    line-height: 30px;
+    font-size: 1em;
+}
+
+/*EDUCACION Y EXPERIENCIA*/
+.contenedor-educacion-experiencia p {
+    max-width: 100%;
 }
 
 .educacion,.experiencia {
@@ -154,76 +180,52 @@ h6 {
     margin: 40px 86px;
 }
 
-.experiencia div, .educacion div {
+.experiencia div,.educacion div {
     padding-bottom: 20px;
 }
-/*ARTICLE IDIOMAS*/
-.idiomas-skills {
+
+
+/*software skill*/
+.gif {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+    flex-grow: 2;
 }
 
-#idiomas ul li {
-    padding: 14px 19px;
-    align-content: center;
-    gap: 30px;
-}
-
-#idiomas ul {
-    display: inline-flex;
-    flex-direction: column;
-    gap: 30px;
-
-}
-
-#skills ul li{
-    padding: 0px 48px;
-    font-size: 1.25rem;
-    line-height: 30px;
-}
-
-/*HABILIDADES*/
-.habilidadesyskills {
-    display: flex;
-    font-size:1.8rem;
-}
-
-/*herramientas*/
 .software {
-    padding: 40px 86px;
-    width: 100%;
+    padding: 30px 86px;
+    gap: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-grow: 3;
 }
 
 .adobeyoffice {
     display: flex;
-    gap:20px ;
-
+    gap: 50px;
+    
 }
 
-.adobe, .office {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 160px;
-    gap: 20px;
-}
-
-.contenedor-adobe, .contenedor-office {
+.adobe,.office {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    max-width: 210px;
+    gap: 30px;
+    padding: 14px;
+}
+
+.contenedor-adobe,.contenedor-office {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #FFF;
+    justify-content: center;
+    padding: 15px;
+    gap: 10px;
 }
 
-.habilidades {
-    padding: 40px 86px;
-    width: 100%;
-}
-.habilidades ul {
-    padding: 0px;
-}
-
-/*fin skills*/
 
 /*Porflio*/
 #portfolio {
@@ -249,93 +251,98 @@ h6 {
     gap: 30px;
 }
 
-#contenedor-contacto{
+#contenedor-contacto {
     display: flex;
     flex-direction: column;
     gap: 30px;
     justify-content: center;
 }
+
 #botones-contacto {
     display: flex;
     justify-content: center;
     padding: 20px;
     gap: 30px;
 }
-#botones-contacto a {
-    cursor: url(img/cursor-mano.png), auto;
-}
 
-#botones-contacto a,#botones-contacto a:hover{
+#botones-contacto a,#botones-contacto a:hover {
     border-radius: 50%;
 }
 
 /*flecha arriba*/
-.flecha-arriba{
+.flecha-arriba {
     position: fixed;
     right: 20px;
-    bottom:20px;
-    z-index:1000;
+    bottom: 20px;
+    z-index: 1000;
 }
-/*FIN MAIN*/
-/*INICIO FOOTER*/
+
+/*FIN MAIN*//*INICIO FOOTER*/
 footer {
-    padding: 20px 86px;
+    padding: 30px 86px;
     display: flex;
     justify-content: space-between;
 }
 
 /*COLORES FONDO*/
-.hobbies,.habilidades,#botones-contacto a,#contacto { /*fondo naranja*/
+.hobbies,#botones-contacto a,#contacto,.gif {
     background-color: #D9703C;
-}
+} /*fondo naranja*/
 
-header,#botones-contacto a:hover, footer, .herramientas,.idiomas-skills,.software { /*fondo azul*/
+header,#botones-contacto a:hover,footer,.herramientas,.idiomas-skills,.software {
     background-color: #434dac;
-}
+} /*fondo azul*/
+
 /*COLORES TIPOGRAFIA*/
-.botonera ul li a, header p, header h2,h3,.idiomas-skills,#idiomas h3, #skills h3,.habilidadesyskills,.software h3,.software h4,footer p, footer h4, .office h6, .adobe h6 {
+.botonera ul li a,header p,header h2,h3,.idiomas-skills,.software h3,.software h4,footer p,footer h4,.office h6,.adobe h6,.idiomas-skills h4 {
     color: #fff;
 }/*tipografia en blanco*/
 
-p,.información p,main h3,h4 {
+p,.información p, h4,h3 {
     color: #434dac;
-} /* tipografia azul*/
+}/* tipografia azul*/
 
-h1,h5,h6,.información h5  {
+h1,h5,h6,.información h5 {
     color: #D9703C;
-} /*tipografia naranja*/
+}/*tipografia naranja*/
 
 /*BORDES*/
-#botones-contacto a:hover, #botones-contacto a, #idiomas ul li, .botonera ul li a { 
-    border:2px solid#FFF;
-} /*borde blanco*/
+#botones-contacto a:hover,#botones-contacto a,#idiomas ul li,.botonera ul li a {
+    border: 2px solid#FFF;
+}/*borde blanco*/
 
-.educacion,.experiencia, #idiomas ul li,#portfolio article img {
+.educacion,.experiencia,#idiomas ul li,#portfolio article img {
     border-radius: 60px;
 }/*border radius 60*/
 
-.educacion,.experiencia,#portfolio article img  {
+.contenedor-adobe,.contenedor-office{
+    border-radius: 16px;
+}
+
+.educacion,.experiencia,#portfolio article img {
     border: 2px solid #434DAC;
-} /*borde azul*/
+}/*borde azul*/
 
 /*FUENTES*/
-header h2,h3,main h3,.habilidadesyskills { /*Bungee Hairline*/
+header h2,h3,.habilidadesyskills,main h3 {
+    /*Bungee Hairline*/
     font-family: "Bungee Hairline", sans-serif;
 }
 
-h1,h4,.información h5 {
-    font-family: "Bungee", sans-serif;/*Bungee*/
+h1,h4,.información h5, h3 {
+    font-family: "Bungee", sans-serif;
+    /*Bungee*/
 }
 
-body,h5,header p, h6,.información p { /*Archivo sans*/
+body,header p,h6,.información p {
+    /*Archivo sans*/
     font-family: "Archivo", sans-serif;
 }
 
 span {
     font-weight: 700;
-} 
+}
 
-/*PADDING*/
-.información,header #titulos-presentación,#idiomas h3, #skills h3,#idiomas ul,.presentación {
+.información,header #titulos-presentación,.presentación, .idiomas-skills{
     padding: 0px 86px;
-} /*padding general*/
+}/*padding general*/
